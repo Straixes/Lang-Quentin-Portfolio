@@ -1,0 +1,154 @@
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70em;
+}
+
+.parcours-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20em;
+    margin: 0;
+}
+
+/* Titre de section */
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4ecdc4;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+
+/* Timeline */
+.parcours-timeline {
+    position: relative;
+    padding-left: 0;
+}
+
+.timeline-content:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    bottom: -40px;
+    width: 2px;
+    background-color: #2d3748;
+}
+
+/* Point de la timeline */
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #4ecdc4;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 8px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Contenu de la timeline */
+.timeline-content {
+    transition: 0.5s;
+    background-color: #2d3748;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 3px solid #4ecdc4;
+}
+
+.timeline-period {
+    color: #4ecdc4;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.timeline-title {
+    color: #e2e8f0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.timeline-description {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Badges de compétences */
+.timeline-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-badge {
+    background-color: #4a5568;
+    color: #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #4a5568;
+    transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+    background-color: #4ecdc4;
+    color: #1a202c;
+    border-color: #4ecdc4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .timeline-dot {
+        margin-right: 0;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+    
+    .timeline-item:not(:last-child)::after {
+        display: none;
+    }
+    
+    .timeline-content {
+        margin-left: 0;
+    }
+    
+    .parcours-section {
+        padding: 40px 0;
+    }
+}

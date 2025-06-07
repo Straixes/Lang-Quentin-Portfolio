@@ -1,0 +1,236 @@
+* {
+    font-family: 'Share Tech', sans-serif;
+}
+
+body {
+    background-color: #0a192f;
+    color: #64ffda;
+}
+
+h2 {
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+}
+
+div#presentation {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.assidePD img{
+    box-shadow: #ccd6f65c 4px 4px 11px;
+    width: 9em;
+    height: 9em;
+    border-radius: 50%
+}
+
+.assidePG button{
+    background-color: #64ffda;
+    border-radius: 8px;
+    border: solid 2px #64ffda;
+    transition: 0.5s;
+}
+
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 1em;
+}
+
+.skills div {
+  display: flex;
+  justify-content: center;
+  color: #ccd6f6;
+  background-color: #2d3748;
+  border-radius: 10px;
+  box-shadow: #ccd6f613 1px 1px 11px;
+  padding: 0.8em;
+  width: 2.2em;
+}
+
+.divSkills {
+    transition: 0.5s;
+}
+
+.divSkills:hover {
+  transform: scale(1.15);
+  background-color: #64ffda;
+}
+
+.skills i {
+  transition: 0.2s;
+  font-size: 2rem;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.skills div:hover i {
+    color: #0a192f;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; /
+}
+
+.card h2 {
+  padding: 0;
+  margin: 0.5em;
+}
+
+.card {
+  padding: 1em;
+  background-color: #2d3748;
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: #ccd6f613 1px 1px 11px;
+  transition: 0.5s;
+  width: 20em; 
+  height: 25em; 
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover, div.content a button, .assidePG button:hover {
+    transform: scale(1.05);
+}
+
+
+div.content a button {
+    background-color: #64ffda;
+    border-radius: 8px;
+    border: solid 2px #64ffda;
+    transition: 0.5s;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  width: 100%;
+  max-width: 500px;
+  background-color: #2d3748;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: #ccd6f613 4px 4px 11px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.8em;
+  border: none;
+  border-radius: 8px;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1rem;
+  transition: 0.3s;
+  box-shadow: #ccd6f65c 1px 1px 5px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #64ffda;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+  transform: scale(1.02);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #8892b0;
+  opacity: 0.8;
+}
+
+.contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#btn-send {
+  background-color: #64ffda;
+  color: #0a192f;
+  border: 2px solid #64ffda;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1rem;
+  transition: 0.5s;
+  margin-top: 0.5em;
+}
+
+#btn-send:hover {
+  transform: scale(1.05);
+  background-color: transparent;
+  color: #64ffda;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
+}
+
+/* Section liens de contact */
+#lienContact {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em 1em;
+}
+
+#lienContact a {
+  text-decoration: none;
+  padding: 1em;
+  background-color: #2d3748;
+  border-radius: 50%;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: #ccd6f613 2px 2px 8px;
+}
+
+#lienContact a:hover {
+  transform: scale(1.15);
+  background-color: #64ffda;
+}
+
+#lienContact a:hover i {
+  color: #0a192f;
+}
+
+#lienContact i {
+  font-size: 1.5rem;
+  color: #64ffda;
+  transition: 0.3s;
+}
+
+#lienContact {
+  display: flex;
+  justify-content: center;
+}
+
+#lienContact a {
+  text-decoration: none;
+  padding: 1em;
+}

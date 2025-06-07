@@ -18,6 +18,13 @@ div#presentation {
     justify-content: space-around;
 }
 
+div#presentation, section#skills {
+  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+}
+
+section#skills {
+  padding: 1em;
+}
 
 .assidePD img{
     box-shadow: #ccd6f65c 4px 4px 11px;
@@ -32,7 +39,6 @@ div#presentation {
     border: solid 2px #64ffda;
     transition: 0.5s;
 }
-
 
 .skills {
   display: flex;
@@ -51,6 +57,8 @@ div#presentation {
   box-shadow: #ccd6f613 1px 1px 11px;
   padding: 0.8em;
   width: 2.2em;
+  border: 1px solid #64ffda;
+
 }
 
 .divSkills {
@@ -73,7 +81,6 @@ div#presentation {
     color: #0a192f;
 }
 
-
 .cards {
   display: flex;
   justify-content: center;
@@ -95,7 +102,7 @@ div#presentation {
   align-items: center;
   box-shadow: #ccd6f613 1px 1px 11px;
   transition: 0.5s;
-  width: 20em; 
+  width: 21em; 
   height: 25em; 
 }
 
@@ -196,7 +203,8 @@ div.content a button {
   padding: 2em 1em;
 }
 
-#lienContact a {
+#lienContact a {    
+  border: 2px solid #64ffda;
   text-decoration: none;
   padding: 1em;
   background-color: #2d3748;

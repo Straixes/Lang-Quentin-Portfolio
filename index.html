@@ -1,112 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/parcours.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quentin Lang — Étudiant BUT Informatique</title>
 </head>
 <body>
 
-    <div id="presentation">
-        <aside class="assidePG">
-            <h1 id="presentation">Bonjour, je suis LANG Quentin</h1>
-            <p>Etudiant en informatique en première année a l'IUT2 Grenoble.</p>
-            <a href=""><button>Télécharger mon CV</button></a>
-        </aside>
-        <aside class="assidePD">
-            <img src="img/identite.JPG" alt="">
-        </aside>
-    </div>
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#presentation" class="nav-id">
+                <span class="dot"></span>
+                Q. LANG <span class="num">// portfolio</span>
+            </a>
+            <ul>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#outils">Outils</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="skills">
-        <h2>Compétences</h2>
-        <div class="skills">
-            <div class="divSkills"><i class="fab fa-java"></i></div>
-            <div class="divSkills"><i class="fab fa-html5"></i></div>
-            <div class="divSkills"><i class="fab fa-css3-alt"></i></div>
-            <div class="divSkills"><i class="fab fa-python"></i></div>
-            <div class="divSkills"><i class="fas fa-database"></i></div>
-            <div class="divSkills"><i class="fab fa-linux"></i></div>
-            <div class="divSkills"><i class="fab fa-git-alt"></i></div>
-        </div>
-    </section>
-    
-    <section id="projets">
-        <h2>Projets</h2>
-        <div class="cards">
-            <article class="card">
-                <header>
-                    <h2>A short heading</h2>
-                </header>
-                <img src="img/Sans titre.jpg" alt="code image">
-                <div class="content">
-                    <p> Le projet consiste à créer un programme qui classe automatiquement des dépêches journalistiques dans l’une des cinq catégories suivantes : Sciences, Culture, Économie, Politique, ou Sport, en se basant sur des mots-clés représentatifs. </p>
-                     <a href="projetIa.html"><button>En savoir plus</button></a>  
+    <!-- ===================== HERO / PRESENTATION ===================== -->
+    <section id="presentation" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <span class="blink"></span>
+                    Disponible pour stage / alternance — Grenoble
                 </div>
-            </article>
-            
+                <h1>Bonjour, je suis <span class="highlight">Quentin Lang</span>.</h1>
+                <p class="hero-lede">
+                    Étudiant en 2<sup>e</sup> année de BUT Informatique à l'IUT2 de Grenoble.
+                    Je conçois des projets qui vont de l'algorithme de classification
+                    au site qui les présente — avec un goût particulier pour le code propre
+                    et les interfaces qui racontent quelque chose.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projets" class="btn btn-primary"><i class="fas fa-folder-open"></i> Voir mes projets</a>
+                    <a href="" class="btn btn-ghost"><i class="fas fa-arrow-down"></i> Télécharger mon CV</a>
+                </div>
+                <div class="hero-tags">
+                    <span class="tag tag-sciences">Java</span>
+                    <span class="tag tag-eco">SQL</span>
+                    <span class="tag tag-politique">Python</span>
+                    <span class="tag tag-culture">Web</span>
+                    <span class="tag tag-sport">Linux</span>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="frame">
+                    <img src="img/identite.JPG" alt="Photo de Quentin Lang">
+                </div>
+            </div>
         </div>
     </section>
 
-    <h2>Parcours</h2>
-    <section class="parcours-section">
+    <!-- ===================== A PROPOS ===================== -->
+    <section id="apropos" class="section apropos">
         <div class="container">
-            
-            <div class="parcours-timeline">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Fiche d'identité</span>
+                    <h2>À propos</h2>
+                </div>
+                <p class="section-note">Lorem ipsum dolor sit amet — texte à remplacer.</p>
+            </div>
+
+            <div class="apropos-grid">
+                <div class="apropos-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+
+                <aside class="apropos-card">
+                    <h3>Fiche</h3>
+                    <dl class="apropos-fields">
+                        <div class="apropos-field">
+                            <dt>Nom</dt>
+                            <dd>Lang Quentin</dd>
+                        </div>
+                        <div class="apropos-field">
+                            <dt>Formation</dt>
+                            <dd>Lorem ipsum dolor</dd>
+                        </div>
+                        <div class="apropos-field">
+                            <dt>Diplômes</dt>
+                            <dd>Lorem, ipsum dolor</dd>
+                        </div>
+                        <div class="apropos-field">
+                            <dt>Métier visé</dt>
+                            <dd>Lorem ipsum</dd>
+                        </div>
+                        <div class="apropos-field">
+                            <dt>Localisation</dt>
+                            <dd>Grenoble, France</dd>
+                        </div>
+                        <div class="apropos-field">
+                            <dt>Langues</dt>
+                            <dd>Lorem, ipsum</dd>
+                        </div>
+                    </dl>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== COMPETENCES ===================== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Boîte à outils</span>
+                    <h2>Compétences</h2>
+                </div>
+                <p class="section-note">Du langage à l'outil de test, organisés par grand domaine.</p>
+            </div>
+
+            <div class="skills-groups">
+
+                <div class="skills-group">
+                    <h3 class="skills-group-title"><span class="tag tag-sciences">Langages</span></h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-java"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <h3 class="skills-group-title"><span class="tag tag-politique">Frameworks &amp; back-end</span></h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-symfony"></i>
+                            <span class="skill-name">Symfony</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-server"></i>
+                            <span class="skill-name">PHP</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-linux"></i>
+                            <span class="skill-name">Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <h3 class="skills-group-title"><span class="tag tag-eco">Tests &amp; qualité</span></h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-vial-circle-check"></i>
+                            <span class="skill-name">Cypress</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-masks-theater"></i>
+                            <span class="skill-name">Playwright</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OUTILS DU QUOTIDIEN ===================== -->
+    <section id="outils" class="section outils-section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Sur le bureau</span>
+                    <h2>Outils du quotidien</h2>
+                </div>
+                <p class="section-note">L'environnement et la méthode plutôt que la techno — ce qui ne change pas d'un projet à l'autre.</p>
+            </div>
+
+            <div class="outils-grid">
+
+                <!-- Poste de travail -->
+                <div class="outils-card outils-poste">
+                    <h3 class="outils-card-title">
+                        <i class="fas fa-desktop"></i> Poste de travail
+                    </h3>
+                    <ul class="outils-list">
+                        <li>
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <span class="outils-name">Visual Studio Code</span>
+                                <span class="outils-desc">Éditeur principal — extensions Java, PHP, Live Server</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-linux"></i>
+                            <div>
+                                <span class="outils-name">Linux (environnement IUT)</span>
+                                <span class="outils-desc">Terminal, scripts shell, gestion de fichiers au quotidien</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-git-alt"></i>
+                            <div>
+                                <span class="outils-name">Git &amp; GitLab UGA</span>
+                                <span class="outils-desc">Versioning, branches, revue de code en binôme</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-terminal"></i>
+                            <div>
+                                <span class="outils-name">Terminal &amp; lignes de commande</span>
+                                <span class="outils-desc">Compilation, scripts de test, automatisation simple</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Méthode de travail -->
+                <div class="outils-card outils-methode">
+                    <h3 class="outils-card-title">
+                        <i class="fas fa-diagram-project"></i> Méthode de travail
+                    </h3>
+                    <p class="outils-methode-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Organisation des projets
+                        de TP en sprints courts, avec un tableau de suivi type Kanban pour répartir les
+                        tâches en binôme et visualiser l'avancement.
+                    </p>
+
+                    <!-- Mini tableau Kanban -->
+                    <div class="kanban-board">
+                        <div class="kanban-column">
+                            <div class="kanban-column-title">À faire</div>
+                            <div class="kanban-card tag-politique">Lorem ipsum dolor</div>
+                            <div class="kanban-card tag-eco">Sed do eiusmod</div>
+                        </div>
+                        <div class="kanban-column">
+                            <div class="kanban-column-title">En cours</div>
+                            <div class="kanban-card tag-sciences">Ut enim ad minim</div>
+                        </div>
+                        <div class="kanban-column">
+                            <div class="kanban-column-title">Terminé</div>
+                            <div class="kanban-card tag-sport">Quis nostrud</div>
+                            <div class="kanban-card tag-culture">Duis aute irure</div>
+                            <div class="kanban-card tag-sciences">Excepteur sint</div>
+                        </div>
+                    </div>
+
+                    <div class="outils-tags">
+                        <span class="tag tag-sciences">Kanban</span>
+                        <span class="tag tag-eco">Sprints courts</span>
+                        <span class="tag tag-politique">Travail en binôme</span>
+                        <span class="tag tag-culture">Revue de code</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="projets" class="section projets-section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Travaux récents</span>
+                    <h2>Projets</h2>
+                </div>
+                <p class="section-note">Trois dossiers — naviguez avec les flèches.</p>
+            </div>
+
+            <div class="carousel" id="projects-carousel">
+                <button class="carousel-arrow carousel-arrow-left" type="button" aria-label="Projet précédent">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+
+                        <!-- Carte 1 — projet réel -->
+                        <article class="project-card-lg">
+                            <div class="project-media-lg">
+                                <span class="ref">Dossier 01</span>
+                                <img src="img/Sans titre.jpg" alt="Aperçu du code du projet de classification">
+                            </div>
+                            <div class="project-body-lg">
+                                <h3>Classification automatique de dépêches</h3>
+                                <p>
+                                    Programme qui classe automatiquement des dépêches journalistiques dans
+                                    l'une de cinq catégories — Sciences, Culture, Économie, Politique, Sport —
+                                    à partir de lexiques de mots-clés pondérés.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag tag-sciences">Sciences</span>
+                                    <span class="tag tag-culture">Culture</span>
+                                    <span class="tag tag-eco">Économie</span>
+                                    <span class="tag tag-politique">Politique</span>
+                                    <span class="tag tag-sport">Sport</span>
+                                </div>
+                                <a href="projetIa.html" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Carte 2 — lorem ipsum -->
+                        <article class="project-card-lg">
+                            <div class="project-media-lg">
+                                <span class="ref">Dossier 02</span>
+                                <div class="media-placeholder"><i class="fas fa-layer-group"></i></div>
+                            </div>
+                            <div class="project-body-lg">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag tag-sciences">Lorem</span>
+                                    <span class="tag tag-eco">Ipsum</span>
+                                    <span class="tag tag-politique">Dolor</span>
+                                </div>
+                                <a href="#" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Carte 3 — lorem ipsum -->
+                        <article class="project-card-lg">
+                            <div class="project-media-lg">
+                                <span class="ref">Dossier 03</span>
+                                <div class="media-placeholder"><i class="fas fa-vial"></i></div>
+                            </div>
+                            <div class="project-body-lg">
+                                <h3>Consectetur adipiscing elit</h3>
+                                <p>
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                    ut aliquip ex ea commodo consequat duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag tag-culture">Lorem</span>
+                                    <span class="tag tag-sport">Ipsum</span>
+                                    <span class="tag tag-sciences">Dolor</span>
+                                </div>
+                                <a href="#" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-right" type="button" aria-label="Projet suivant">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-dots" id="projects-dots">
+                <button class="carousel-dot is-active" type="button" aria-label="Aller au dossier 1"></button>
+                <button class="carousel-dot" type="button" aria-label="Aller au dossier 2"></button>
+                <button class="carousel-dot" type="button" aria-label="Aller au dossier 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PARCOURS ===================== -->
+    <section id="parcours" class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Chronologie</span>
+                    <h2>Parcours</h2>
+                </div>
+                <p class="section-note">De la troisième aux études supérieures, un fil plutôt logique.</p>
+            </div>
+            <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2023 - Présent</div>
-                        <h3 class="timeline-title">BUT Informatique</h3>
+                    <div class="timeline-period">2023 — Présent</div>
+                    <div>
+                        <h3 class="timeline-title">BUT Informatique — IUT2 Grenoble</h3>
                         <p class="timeline-description">
-                            Formation spécialisée en développement logiciel, programmation orientée objet, 
-                            bases de données et gestion de projets. Accent mis sur le développement web 
+                            Formation spécialisée en développement logiciel, programmation orientée objet,
+                            bases de données et gestion de projets. Accent mis sur le développement web
                             full-stack et les méthodologies modernes.
                         </p>
                         <div class="timeline-skills">
-                            <span class="skill-badge">Java</span>
-                            <span class="skill-badge">SQL</span>
-                            <span class="skill-badge">Web Dev</span>
-                            <span class="skill-badge">UML</span>
+                            <span class="tag tag-sciences">Java</span>
+                            <span class="tag tag-eco">SQL</span>
+                            <span class="tag tag-politique">Web Dev</span>
+                            <span class="tag tag-culture">UML</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2021-2024 - Lycée Pierre du Terrail</div>
-                        <h3 class="timeline-title">Lycée</h3>
+                    <div class="timeline-period">2025<br>Stage — 2<sup>e</sup> année</div>
+                    <div>
+                        <h3 class="timeline-title">Lorem ipsum dolor sit amet</h3>
                         <p class="timeline-description">
-                            Développement d'applications web responsives en équipe. Application des 
-                            compétences techniques dans un environnement professionnel avec méthodologies agiles.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                         <div class="timeline-skills">
-                            <span class="skill-badge">Maths</span>
-                            <span class="skill-badge">NSI</span>
-                            <span class="skill-badge">Physique</span>
+                            <span class="tag tag-eco">Lorem</span>
+                            <span class="tag tag-culture">Ipsum</span>
+                            <span class="tag tag-sport">Dolor</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2020 - Stage de troisième</div>
-                        <h3 class="timeline-title">Expérience professionnelle</h3>
+                    <div class="timeline-period">2021 — 2024<br>Lycée Pierre du Terrail</div>
+                    <div>
+                        <h3 class="timeline-title">Spécialités Maths / NSI / Physique</h3>
                         <p class="timeline-description">
-                            Développement d'applications web responsives en équipe. Application des 
-                            compétences techniques dans un environnement professionnel avec méthodologies agiles.
+                            Renforcement des bases scientifiques et premiers projets de programmation,
+                            posant les fondations logiques utilisées aujourd'hui en BUT.
                         </p>
                         <div class="timeline-skills">
-                            <span class="skill-badge">HTML-CSS</span>
-                            <span class="skill-badge">Php</span>
-                            <span class="skill-badge">Git</span>
+                            <span class="tag tag-sciences">Maths</span>
+                            <span class="tag tag-politique">NSI</span>
+                            <span class="tag tag-culture">Physique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-period">2020<br>Stage de 3e</div>
+                    <div>
+                        <h3 class="timeline-title">Première expérience en entreprise</h3>
+                        <p class="timeline-description">
+                            Découverte du développement web en équipe et premiers pas avec des
+                            méthodologies de travail proches de l'agile.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="tag tag-sciences">HTML / CSS</span>
+                            <span class="tag tag-eco">PHP</span>
+                            <span class="tag tag-sport">Git</span>
                         </div>
                     </div>
                 </div>
@@ -114,33 +480,98 @@
         </div>
     </section>
 
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+        <div class="container contact-grid">
+            <div class="contact-intro">
+                <span class="eyebrow">Restons en contact</span>
+                <h2>Me contacter</h2>
+                <p>
+                    Une question, une opportunité de stage ou simplement envie d'échanger
+                    sur un projet ? N'hésitez pas à m'écrire.
+                </p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/quentin-lang-81674936a/" target="_blank" rel="noopener">
+                        <i class="devicon-linkedin-plain"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Straixes" target="_blank" rel="noopener">
+                        <i class="devicon-github-original-wordmark"></i> GitHub
+                    </a>
+                    <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/langq" target="_blank" rel="noopener">
+                        <i class="devicon-gitlab-plain-wordmark colored"></i> GitLab — UGA
+                    </a>
+                    <a href="https://www.instagram.com/_quentin.lang_/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
 
-     <h2>Me contacter</h2>
-    <section id="contact">
-        <form class="contact">
-            <input type="text" name="nom" placeholder="Nom" required>
-            <input type="text" name="prenom" placeholder="Prenom" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Votre message..."></textarea>
-            <input id="btn-send" type="submit" value="Envoyer" name="submit" />
-        </form>
-    </section>
-
-    <section id="lienContact">
-        <a href="https://www.linkedin.com/in/quentin-lang-81674936a/"><i class="devicon-linkedin-plain"></i></a>
-        <a href="https://github.com/Straixes"><i class="devicon-github-original-wordmark"></i></a>
-        <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/langq"><i class="devicon-gitlab-plain-wordmark colored"></i></a>
-        <a href="https://www.instagram.com/_quentin.lang_/"><i class="fa-brands fa-instagram"></i></a>
-    </section>
-
-     <!-- Footer -->
-    <div class="project-footer">
-        <div class="containerF">
-            <p>&copy; Lang Quentin all rights reserved 2025-2026 </p>
-            <p style="color: #ccd6f6; margin-bottom: 1em;"> Portfolio réalisé dans le cadre de la formation BUT Informatique</p>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+                </div>
+                <button id="btn-send" type="submit" class="btn btn-primary">
+                    Envoyer <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
         </div>
-    </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <span class="stamp-mini"><span class="dot"></span> &copy; Lang Quentin — 2025/2026</span>
+            <span>Portfolio réalisé dans le cadre de la formation BUT Informatique — IUT2 Grenoble</span>
+        </div>
+    </footer>
+    <!-- ===================== CAROUSEL SCRIPT ===================== -->
+    <script>
+        (function(){
+            const carousel = document.getElementById('projects-carousel');
+            const track = carousel.querySelector('.carousel-track');
+            const cards = Array.from(track.children);
+            const prevBtn = carousel.querySelector('.carousel-arrow-left');
+            const nextBtn = carousel.querySelector('.carousel-arrow-right');
+            const dots = Array.from(document.querySelectorAll('#projects-dots .carousel-dot'));
+
+            let index = 0;
+            const total = cards.length;
+
+            function update(){
+                track.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+            }
+
+            function go(delta){
+                index = (index + delta + total) % total;
+                update();
+            }
+
+            prevBtn.addEventListener('click', () => go(-1));
+            nextBtn.addEventListener('click', () => go(1));
+            dots.forEach((dot, i) => dot.addEventListener('click', () => {
+                index = i;
+                update();
+            }));
+
+            update();
+        })();
+    </script>
 
 </body>
 </html>
-

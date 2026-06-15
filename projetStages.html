@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projetIa.css">
+    <link rel="stylesheet" href="css/projetStages.css">
+    <title>Mon carnet de suivi de stage — Projet</title>
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="nav-id">
+                <span class="dot"></span>
+                Q. LANG <span class="num">// portfolio</span>
+            </a>
+            <ul>
+                <li><a href="#overview">Aperçu</a></li>
+                <li><a href="#equipe">Équipe</a></li>
+                <li><a href="#process">Travaux</a></li>
+                <li><a href="#tech">Technique</a></li>
+                <li><a href="#results">Bilan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== HEADER PROJET ===================== -->
+    <section class="proj-header">
+        <div class="container">
+            <a href="index.html" class="proj-back"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+            <div class="proj-meta">
+                <span class="proj-id">Dossier 03 / SAE 4.REAL.01</span>
+            </div>
+            <h1>Mon carnet de suivi de stage</h1>
+            <p class="proj-lede">
+                Amélioration et optimisation d'une application existante de suivi de recherche de stage,
+                composée d'une application mobile Android, d'un back-office web Symfony et d'une base de
+                données PostgreSQL. Mon travail s'est concentré sur l'application <strong>mobile</strong>
+                et la <strong>stratégie de tests</strong> de bout en bout.
+            </p>
+            <div class="proj-quicknav">
+                <a href="#overview"><i class="fas fa-eye"></i> Aperçu</a>
+                <a href="#equipe"><i class="fas fa-users"></i> Équipe</a>
+                <a href="#process"><i class="fas fa-cogs"></i> Travaux</a>
+                <a href="#tech"><i class="fas fa-code"></i> Technique</a>
+                <a href="#results"><i class="fas fa-chart-line"></i> Bilan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OVERVIEW ===================== -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Le projet en bref</span>
+                    <h2>Vue d'ensemble</h2>
+                </div>
+                <p class="section-note">SAE 4.REAL.01 — Développement d'une application complexe, S4 BUT Informatique.</p>
+            </div>
+
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Objectif</h3>
+                    <p>Évaluer la qualité d'une application existante — « Mon carnet de suivi de recherche
+                    de stage » — puis proposer et mettre en œuvre des optimisations sur la conception,
+                    l'ergonomie, la performance et la fiabilité.</p>
+                </div>
+
+                <div class="overview-card">
+                    <div class="icon"><i class="fas fa-sitemap"></i></div>
+                    <h3>Architecture</h3>
+                    <p>Écosystème en trois parties reliées par une API : une application mobile Android
+                    (Java, Retrofit), un back-office web (Symfony / API Platform, MVC, Twig) et une base
+                    de données PostgreSQL exploitée via Doctrine.</p>
+                </div>
+
+                <div class="overview-card">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h3>Équipe</h3>
+                    <p>Groupe de 6 étudiants, divisé en deux sous-groupes de 3 : un sur le back-office web,
+                    l'autre sur l'application mobile. Synchronisation régulière en fin de séance pour
+                    garder les solutions cohérentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EQUIPE ===================== -->
+    <section id="equipe" class="section equipe-section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Qui a fait quoi</span>
+                    <h2>Organisation de l'équipe</h2>
+                </div>
+                <p class="section-note">Deux sous-groupes de trois, répartis selon les compétences de chacun.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3><i class="fas fa-globe"></i> Sous-groupe Back-office Web</h3>
+                    <p>Restructuration de l'architecture Symfony (contrôleurs, services, repositories,
+                    entités), refonte des interfaces (tableau de bord, suivi des offres) et mise en
+                    conformité avec les standards d'accessibilité.</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Conteneurisation Docker</li>
+                        <li><i class="fas fa-circle"></i> Refonte du Tableau de Bord (graphiques)</li>
+                        <li><i class="fas fa-circle"></i> Services métier &amp; entités Symfony</li>
+                        <li><i class="fas fa-circle"></i> Tests PHPUnit (sécurité, contrôleurs, services)</li>
+                    </ul>
+                </div>
+
+                <div class="team-card is-mine">
+                    <h3><i class="fas fa-mobile-screen-button"></i> Sous-groupe Mobile &amp; Tests (le mien)</h3>
+                    <p>Refonte de l'expérience de l'application Android destinée aux étudiants, et mise
+                    en place d'une stratégie de tests d'interface de bout en bout pour fiabiliser les
+                    parcours critiques de l'application.</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Refonte visuelle &amp; navigation Android</li>
+                        <li><i class="fas fa-circle"></i> Indicateurs visuels &amp; feedback (Toasts)</li>
+                        <li><i class="fas fa-circle"></i> Tests End-to-End sur les parcours clés</li>
+                        <li><i class="fas fa-circle"></i> Diagnostic des instabilités réseau via les tests</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Rôle individuel -->
+            <div class="role-card">
+                <div class="role-icon"><i class="fas fa-user-check"></i></div>
+                <div>
+                    <h3>Mon rôle dans le sous-groupe</h3>
+                    <p>
+                        Au sein du sous-groupe Mobile, je me suis concentré sur l'application Android
+                        destinée aux étudiants et sur la mise en place des tests d'interface (End-to-End)
+                        permettant de valider les parcours utilisateurs les plus importants.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Responsable principal des tests front-end et End-to-End : définition de la stratégie, rédaction et exécution des scénarios de test sur les parcours critiques de l'application mobile.</li>
+                        <li><i class="fas fa-check"></i> Réalisation des modifications et améliorations sur l'application Android : refonte de la navigation, cohérence visuelle entre les écrans, ajout d'indicateurs de statut et de retours utilisateur (Toasts).</li>
+                        <li><i class="fas fa-check"></i> Rôle de second chef de projet à l'échelle du groupe entier (6 personnes) : coordination des tâches entre les deux sous-groupes, suivi de l'avancement global et point de liaison pour maintenir la cohérence entre la partie mobile et le back-office web.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROCESS / TRAVAUX ===================== -->
+    <section id="process" class="section process-section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Du diagnostic à la correction</span>
+                    <h2>Travaux réalisés — Mobile &amp; Tests</h2>
+                </div>
+                <p class="section-note">La démarche suivie sur la partie sur laquelle j'ai travaillé.</p>
+            </div>
+
+            <div class="process-list">
+                <div class="process-step">
+                    <div class="step-number">01<span class="slash">/04</span></div>
+                    <div class="step-content">
+                        <h3>Rétroconception &amp; diagnostic</h3>
+                        <p>Analyse de l'application Android existante : navigation désordonnée, barre
+                        d'activité créant des conflits visuels, marges et ordres de boutons incohérents
+                        entre les écrans.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02<span class="slash">/04</span></div>
+                    <div class="step-content">
+                        <h3>Refonte de l'interface mobile</h3>
+                        <p>Généralisation d'une barre de navigation cohérente, repositionnement et
+                        renommage des boutons « Retour », ajout de pastilles de couleur indiquant le
+                        statut des candidatures et des offres, et messages « Toast » pour confirmer
+                        chaque action critique.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03<span class="slash">/04</span></div>
+                    <div class="step-content">
+                        <h3>Stratégie de tests End-to-End</h3>
+                        <p>Priorisation des tests d'interface plutôt que des tests unitaires isolés, afin
+                        de valider la chaîne complète — interface, appels API et persistance des données.
+                        Couverture des parcours de navigation et d'authentification, incluant la
+                        vérification des messages d'erreur en cas d'identifiants invalides.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04<span class="slash">/04</span></div>
+                    <div class="step-content">
+                        <h3>Diagnostic via les tests</h3>
+                        <p>Les échecs rencontrés pendant les tests automatisés ont permis d'isoler des
+                        failles d'infrastructure : coupures prématurées de flux JSON et problèmes de
+                        configuration serveur. Ajout de délais ciblés pour fiabiliser les appels
+                        asynchrones face aux latences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALERIE ===================== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Pièces du dossier</span>
+                    <h2>Aperçus visuels</h2>
+                </div>
+                <p class="section-note">Captures issues du rapport final — back-office web et rapport de tests.</p>
+            </div>
+            <div class="image-gallery">
+                <figure class="gallery-figure">
+                    <img src="img/tableau-bord.png" alt="Tableau de bord refait avec statistiques et graphiques">
+                    <figcaption>Tableau de bord — refonte avec statistiques et graphiques</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="img/suivi-offres.png" alt="Page de gestion du suivi des offres de stage">
+                    <figcaption>Gestion du suivi des offres — candidatures, retenues, consultées</figcaption>
+                </figure>
+                <figure class="gallery-figure">
+                    <img src="img/code-coverage.png" alt="Rapport de couverture de code PHPUnit">
+                    <figcaption>Rapport de couverture de code (PHPUnit / PHPDBG)</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TECH ===================== -->
+    <section id="tech" class="section">
+        <div class="container">
+            <div class="tech-details">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Stack technique</span>
+                        <h2>Technologies &amp; outils utilisés</h2>
+                    </div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <h4><i class="fab fa-android"></i> Application mobile</h4>
+                        <p>Application Android en Java (architecture MVC), interfaces définies en XML,
+                        appels réseau via Retrofit vers l'API du back-office.</p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4><i class="fas fa-vial"></i> Tests End-to-End</h4>
+                        <p>Stratégie de tests d'interface priorisée sur les parcours critiques :
+                        navigation, authentification et gestion des erreurs réseau.</p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4><i class="fab fa-symfony"></i> Back-office Symfony</h4>
+                        <p>Framework Symfony / API Platform suivant le modèle MVC, ORM Doctrine, vues
+                        Twig — exposant l'API consommée par l'application mobile.</p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4><i class="fas fa-database"></i> Base de données</h4>
+                        <p>PostgreSQL, avec une réflexion de normalisation vers la 3<sup>e</sup> forme
+                        normale (3FN) menée en parallèle par le sous-groupe web.</p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4><i class="fas fa-box"></i> Conteneurisation</h4>
+                        <p>Image Docker basée sur PHP 8.4, avec Composer 2 et les dépendances nécessaires
+                        à la connexion PostgreSQL, pour un environnement portable.</p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4><i class="fas fa-shield-halved"></i> Qualité &amp; ergonomie</h4>
+                        <p>Audit basé sur les critères de Bastien &amp; Scapin et sur la norme ISO 25000,
+                        avec mesure d'acceptabilité via score SUS et protocole « Think Aloud ».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== BILAN ===================== -->
+    <section id="results" class="section results-section">
+        <div class="container">
+            <div class="results-intro">
+                <span class="eyebrow">Bilan</span>
+                <h2>Ce que ce projet m'a apporté</h2>
+                <p>Au-delà des aspects techniques, ce projet a aussi été une préparation à l'arrivée en stage.</p>
+            </div>
+
+            <ul class="bilan-list">
+                <li>
+                    <i class="fas fa-vial-circle-check"></i>
+                    <span><strong>Tests End-to-End sur mobile :</strong> première expérience concrète de mise en place d'une stratégie de tests d'interface sur une application Android, couvrant des parcours complets — de l'authentification jusqu'à la validation des données affichées. J'ai compris que les tests peuvent servir autant à diagnostiquer des problèmes d'infrastructure qu'à valider des fonctionnalités.</span>
+                </li>
+                <li>
+                    <i class="fas fa-mobile-screen-button"></i>
+                    <span><strong>Développement mobile Android :</strong> prise en main d'une base de code Android existante en Java — sans tout reconstruire — pour l'améliorer de façon ciblée. Travail sur la navigation, la cohérence visuelle entre écrans et les retours utilisateur, dans un contexte où chaque modification devait rester compatible avec l'API existante.</span>
+                </li>
+                <li>
+                    <i class="fas fa-people-group"></i>
+                    <span><strong>Coordination d'équipe :</strong> en endossant le rôle de second chef de projet, j'ai appris à répartir les tâches, suivre l'avancement de chacun et maintenir le lien entre les deux sous-groupes (mobile et web) qui travaillaient sur des parties distinctes mais dépendantes l'une de l'autre via l'API.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <span class="stamp-mini"><span class="dot"></span> &copy; Lang Quentin — 2025/2026</span>
+            <a href="index.html" class="btn btn-ghost"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+        </div>
+    </footer>
+
+</body>
+</html>

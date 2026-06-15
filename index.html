@@ -9,10 +9,40 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Quentin Lang — Étudiant BUT Informatique</title>
+    <style>
+        /* ---- Carte Aide&Vous dans le carousel ---- */
+        .av-media-placeholder {
+            background: linear-gradient(135deg, #0b1220 0%, #1a2a4e 100%);
+        }
+        .av-hero-icon {
+            font-size: 4rem;
+            color: #5aa8ff;
+        }
+        .av-card-award-ribbon {
+            position: absolute;
+            bottom: 1.1rem;
+            left: 1.1rem;
+            background: #E84C30;
+            color: #FBF6EE;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.45em 1em;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45em;
+            box-shadow: 0 4px 14px -4px rgba(232,76,48,0.55);
+        }
+        .av-card-award-ribbon sup {
+            font-size: 0.7em;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- ===================== NAVBAR ===================== -->
     <header class="site-header">
         <nav class="nav">
             <a href="#presentation" class="nav-id">
@@ -30,7 +60,6 @@
         </nav>
     </header>
 
-    <!-- ===================== HERO / PRESENTATION ===================== -->
     <section id="presentation" class="hero">
         <div class="container hero-grid">
             <div class="hero-text">
@@ -65,7 +94,6 @@
         </div>
     </section>
 
-    <!-- ===================== A PROPOS ===================== -->
     <section id="apropos" class="section apropos">
         <div class="container">
             <div class="section-head">
@@ -73,25 +101,25 @@
                     <span class="eyebrow">Fiche d'identité</span>
                     <h2>À propos</h2>
                 </div>
-                <p class="section-note">Lorem ipsum dolor sit amet — texte à remplacer.</p>
+                <p class="section-note">Étudiant, développeur, compétiteur.</p>
             </div>
 
             <div class="apropos-grid">
                 <div class="apropos-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Je me destine à des métiers du développement full-stack ou de chef de projet — des rôles
+                        où la technique et la coordination se rejoignent. J'aime autant écrire du code
+                        propre que comprendre comment un projet s'organise et avance.
                     </p>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        En dehors de l'écran, le tennis occupe une bonne partie de mon temps — en
+                        compétition de préférence. J'y retrouve la même logique qu'en informatique :
+                        analyser, s'adapter, progresser. Les jeux vidéo et la curiosité permanente pour
+                        les nouvelles technos complètent le tableau.
                     </p>
                     <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Ce portfolio rassemble mes projets, mon parcours et mes compétences. Il est lui-même
+                        un projet — Imaginé et codé avec <strong>l'assistance</strong> d'outil d'ia.
                     </p>
                 </div>
 
@@ -104,15 +132,15 @@
                         </div>
                         <div class="apropos-field">
                             <dt>Formation</dt>
-                            <dd>Lorem ipsum dolor</dd>
+                            <dd>BUT Informatique — IUT2 Grenoble</dd>
                         </div>
                         <div class="apropos-field">
                             <dt>Diplômes</dt>
-                            <dd>Lorem, ipsum dolor</dd>
+                            <dd>Baccalauréat · BUT Informatique (en cours, Bac+2)</dd>
                         </div>
                         <div class="apropos-field">
                             <dt>Métier visé</dt>
-                            <dd>Lorem ipsum</dd>
+                            <dd>Développeur full-stack · Chef de projet</dd>
                         </div>
                         <div class="apropos-field">
                             <dt>Localisation</dt>
@@ -120,14 +148,18 @@
                         </div>
                         <div class="apropos-field">
                             <dt>Langues</dt>
-                            <dd>Lorem, ipsum</dd>
+                            <dd>Français · Anglais B2 · Espagnol B1</dd>
+                        </div>
+                        <div class="apropos-field">
+                            <dt>Centres d'intérêt</dt>
+                            <dd>Tennis (compétition) · Jeux vidéo · Informatique</dd>
                         </div>
                     </dl>
                 </aside>
             </div>
         </div>
     </section>
-    <!-- ===================== COMPETENCES ===================== -->
+
     <section id="skills" class="section">
         <div class="container">
             <div class="section-head">
@@ -138,75 +170,98 @@
                 <p class="section-note">Du langage à l'outil de test, organisés par grand domaine.</p>
             </div>
 
-            <div class="skills-groups">
+            <div class="skills-container">
+                <div class="skills-groups">
+                    <div class="skills-group">
+                        <h3 class="skills-group-title"><span class="tag tag-sciences">Langages</span></h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fab fa-java"></i>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-python"></i>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-globe"></i>
+                                <span class="skill-name">Web (HTML/CSS)</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-js"></i>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-php"></i>
+                                <span class="skill-name">PHP</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-database"></i>
+                                <span class="skill-name">SQL</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="skills-group">
-                    <h3 class="skills-group-title"><span class="tag tag-sciences">Langages</span></h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <i class="fab fa-java"></i>
-                            <span class="skill-name">Java</span>
+                    <div class="skills-group">
+                        <h3 class="skills-group-title"><span class="tag tag-politique">Frameworks &amp; back-end</span></h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fab fa-symfony"></i>
+                                <span class="skill-name">Symfony</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-server"></i>
+                                <span class="skill-name">PHP</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-git-alt"></i>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-linux"></i>
+                                <span class="skill-name">Linux</span>
+                            </div>
                         </div>
-                        <div class="skill-card">
-                            <i class="fab fa-python"></i>
-                            <span class="skill-name">Python</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-html5"></i>
-                            <span class="skill-name">HTML5</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-css3-alt"></i>
-                            <span class="skill-name">CSS3</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-database"></i>
-                            <span class="skill-name">SQL</span>
+                    </div>
+
+                    <div class="skills-group">
+                        <h3 class="skills-group-title"><span class="tag tag-eco">Tests &amp; qualité</span></h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fas fa-vial-circle-check"></i>
+                                <span class="skill-name">Cypress</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-masks-theater"></i>
+                                <span class="skill-name">Playwright</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="skills-group">
-                    <h3 class="skills-group-title"><span class="tag tag-politique">Frameworks &amp; back-end</span></h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <i class="fab fa-symfony"></i>
-                            <span class="skill-name">Symfony</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-server"></i>
-                            <span class="skill-name">PHP</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-git-alt"></i>
-                            <span class="skill-name">Git</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-linux"></i>
-                            <span class="skill-name">Linux</span>
+                <div class="skills-groups">
+                    <div class="skills-group">
+                        <h3 class="skills-group-title"><span class="tag tag-neutral">Savoir-être</span></h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fas fa-users"></i>
+                                <span class="skill-name">Travail en équipe</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-user-check"></i>
+                                <span class="skill-name">Autonome</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-project-diagram"></i>
+                                <span class="skill-name">Coordination</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="skills-group">
-                    <h3 class="skills-group-title"><span class="tag tag-eco">Tests &amp; qualité</span></h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <i class="fas fa-vial-circle-check"></i>
-                            <span class="skill-name">Cypress</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-masks-theater"></i>
-                            <span class="skill-name">Playwright</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ===================== OUTILS DU QUOTIDIEN ===================== -->
     <section id="outils" class="section outils-section">
         <div class="container">
             <div class="section-head">
@@ -219,7 +274,6 @@
 
             <div class="outils-grid">
 
-                <!-- Poste de travail -->
                 <div class="outils-card outils-poste">
                     <h3 class="outils-card-title">
                         <i class="fas fa-desktop"></i> Poste de travail
@@ -229,74 +283,80 @@
                             <i class="fas fa-code"></i>
                             <div>
                                 <span class="outils-name">Visual Studio Code</span>
-                                <span class="outils-desc">Éditeur principal — extensions Java, PHP, Live Server</span>
+                                <span class="outils-desc">Éditeur polyvalent pour le web, les scripts et l'exploration rapide</span>
                             </div>
                         </li>
                         <li>
-                            <i class="fab fa-linux"></i>
+                            <i class="fas fa-cubes"></i>
                             <div>
-                                <span class="outils-name">Linux (environnement IUT)</span>
-                                <span class="outils-desc">Terminal, scripts shell, gestion de fichiers au quotidien</span>
+                                <span class="outils-name">Suite JetBrains</span>
+                                <span class="outils-desc">IntelliJ IDEA pour Java, PhpStorm pour Symfony — environnements dédiés par langage</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <span class="outils-name">Antigravity</span>
+                                <span class="outils-desc">Assistant IA intégré au workflow de développement</span>
                             </div>
                         </li>
                         <li>
                             <i class="fab fa-git-alt"></i>
                             <div>
                                 <span class="outils-name">Git &amp; GitLab UGA</span>
-                                <span class="outils-desc">Versioning, branches, revue de code en binôme</span>
+                                <span class="outils-desc">Versioning, branches, revue de code en équipe</span>
                             </div>
                         </li>
                         <li>
-                            <i class="fas fa-terminal"></i>
+                            <i class="fab fa-linux"></i>
                             <div>
-                                <span class="outils-name">Terminal &amp; lignes de commande</span>
-                                <span class="outils-desc">Compilation, scripts de test, automatisation simple</span>
+                                <span class="outils-name">Linux</span>
+                                <span class="outils-desc">Environnement principal à l'IUT — terminal, scripts shell</span>
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Méthode de travail -->
                 <div class="outils-card outils-methode">
                     <h3 class="outils-card-title">
                         <i class="fas fa-diagram-project"></i> Méthode de travail
                     </h3>
                     <p class="outils-methode-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Organisation des projets
-                        de TP en sprints courts, avec un tableau de suivi type Kanban pour répartir les
-                        tâches en binôme et visualiser l'avancement.
+                        En projet scolaire, j'utilise une approche semi-agile avec un tableau Kanban
+                        pour répartir et suivre les tâches. En stage, j'ai travaillé avec de vrais
+                        sprints agiles. Je m'appuie sur des outils comme <strong>Trello</strong> ou <strong>Notion</strong> pour structurer les tickets et la documentation.
                     </p>
 
-                    <!-- Mini tableau Kanban -->
                     <div class="kanban-board">
                         <div class="kanban-column">
                             <div class="kanban-column-title">À faire</div>
-                            <div class="kanban-card tag-politique">Lorem ipsum dolor</div>
-                            <div class="kanban-card tag-eco">Sed do eiusmod</div>
+                            <div class="kanban-card tag-politique">Rédiger les tests</div>
+                            <div class="kanban-card tag-eco">Corriger le bug #12</div>
                         </div>
                         <div class="kanban-column">
                             <div class="kanban-column-title">En cours</div>
-                            <div class="kanban-card tag-sciences">Ut enim ad minim</div>
+                            <div class="kanban-card tag-sciences">Refonte navigation</div>
                         </div>
                         <div class="kanban-column">
                             <div class="kanban-column-title">Terminé</div>
-                            <div class="kanban-card tag-sport">Quis nostrud</div>
-                            <div class="kanban-card tag-culture">Duis aute irure</div>
-                            <div class="kanban-card tag-sciences">Excepteur sint</div>
+                            <div class="kanban-card tag-sport">Authentification</div>
+                            <div class="kanban-card tag-culture">Maquettes UI</div>
+                            <div class="kanban-card tag-sciences">Modèle de données</div>
                         </div>
                     </div>
 
                     <div class="outils-tags">
                         <span class="tag tag-sciences">Kanban</span>
-                        <span class="tag tag-eco">Sprints courts</span>
-                        <span class="tag tag-politique">Travail en binôme</span>
-                        <span class="tag tag-culture">Revue de code</span>
+                        <span class="tag tag-eco">Sprints agiles</span>
+                        <span class="tag tag-neutral">Trello</span>
+                        <span class="tag tag-neutral">Notion</span>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
     <section id="projets" class="section projets-section">
         <div class="container">
             <div class="section-head">
@@ -315,7 +375,6 @@
                 <div class="carousel-viewport">
                     <div class="carousel-track">
 
-                        <!-- Carte 1 — projet réel -->
                         <article class="project-card-lg">
                             <div class="project-media-lg">
                                 <span class="ref">Dossier 01</span>
@@ -324,62 +383,60 @@
                             <div class="project-body-lg">
                                 <h3>Classification automatique de dépêches</h3>
                                 <p>
-                                    Programme qui classe automatiquement des dépêches journalistiques dans
-                                    l'une de cinq catégories — Sciences, Culture, Économie, Politique, Sport —
-                                    à partir de lexiques de mots-clés pondérés.
+                                    Classification automatique de dépêches journalistiques dans cinq catégories via un algorithme de lexiques de mots-clés pondérés.
                                 </p>
                                 <div class="project-tags">
-                                    <span class="tag tag-sciences">Sciences</span>
-                                    <span class="tag tag-culture">Culture</span>
-                                    <span class="tag tag-eco">Économie</span>
-                                    <span class="tag tag-politique">Politique</span>
-                                    <span class="tag tag-sport">Sport</span>
+                                    <span class="tag tag-sciences">Java</span>
+                                    <span class="tag tag-politique">Équipe de 2</span>
+                                    <span class="tag tag-eco">Algorithmique</span>
                                 </div>
                                 <a href="projetIa.html" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
 
-                        <!-- Carte 2 — lorem ipsum -->
                         <article class="project-card-lg">
                             <div class="project-media-lg">
                                 <span class="ref">Dossier 02</span>
-                                <div class="media-placeholder"><i class="fas fa-layer-group"></i></div>
+                                <div class="media-placeholder av-media-placeholder">
+                                    <i class="fas fa-shield-alt av-hero-icon"></i>
+                                </div>
+                                <div class="av-card-award-ribbon">
+                                    <i class="fas fa-trophy"></i> 2<sup>e</sup> meilleur projet promo
+                                </div>
                             </div>
                             <div class="project-body-lg">
-                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <h3>Aide&amp;Vous — Intelligence Documentaire</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                    Coffre-fort numérique médical intégrant un moteur d'extraction intelligent en Python pour analyser et extraire les ordonnances par OCR.
                                 </p>
                                 <div class="project-tags">
-                                    <span class="tag tag-sciences">Lorem</span>
-                                    <span class="tag tag-eco">Ipsum</span>
-                                    <span class="tag tag-politique">Dolor</span>
+                                    <span class="tag tag-sciences">Python</span>
+                                    <span class="tag tag-politique">PHP</span>
+                                    <span class="tag tag-eco">PostgreSQL</span>
+                                    <span class="tag tag-culture">Équipe de 7</span>
                                 </div>
-                                <a href="#" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
+                                <a href="projetAideVous.html" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
 
-                        <!-- Carte 3 — lorem ipsum -->
                         <article class="project-card-lg">
                             <div class="project-media-lg">
                                 <span class="ref">Dossier 03</span>
-                                <div class="media-placeholder"><i class="fas fa-vial"></i></div>
+                                <img src="img/tableau-bord.png" alt="Tableau de bord de l'application de suivi de stage">
                             </div>
                             <div class="project-body-lg">
-                                <h3>Consectetur adipiscing elit</h3>
+                                <h3>Mon carnet de suivi de stage</h3>
                                 <p>
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                    ut aliquip ex ea commodo consequat duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                                    Refonte ergonomique d'une application Android de suivi de stage et implémentation d'une stratégie de tests End-to-End.
                                 </p>
                                 <div class="project-tags">
-                                    <span class="tag tag-culture">Lorem</span>
-                                    <span class="tag tag-sport">Ipsum</span>
-                                    <span class="tag tag-sciences">Dolor</span>
+                                    <span class="tag tag-politique">Symfony</span>
+                                    <span class="tag tag-sciences">Android</span>
+                                    <span class="tag tag-eco">PostgreSQL</span>
+                                    <span class="tag tag-culture">Docker</span>
+                                    <span class="tag tag-sport">Tests E2E</span>
                                 </div>
-                                <a href="#" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
+                                <a href="projetStages.html" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
 
@@ -399,7 +456,6 @@
         </div>
     </section>
 
-    <!-- ===================== PARCOURS ===================== -->
     <section id="parcours" class="section">
         <div class="container">
             <div class="section-head">
@@ -411,7 +467,7 @@
             </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-period">2023 — Présent</div>
+                    <div class="timeline-period">2024 — Présent</div>
                     <div>
                         <h3 class="timeline-title">BUT Informatique — IUT2 Grenoble</h3>
                         <p class="timeline-description">
@@ -431,16 +487,18 @@
                 <div class="timeline-item">
                     <div class="timeline-period">2025<br>Stage — 2<sup>e</sup> année</div>
                     <div>
-                        <h3 class="timeline-title">Lorem ipsum dolor sit amet</h3>
+                        <h3 class="timeline-title">Stage — Aristid</h3>
                         <p class="timeline-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Stage de 2<sup>e</sup> année de BUT au sein de la société Aristid, spécialisée
+                            dans la distribution et l'analyse de données commerciales. Mission centrée sur
+                            l'automatisation de tests End-to-End dans un environnement agile avec sprints,
+                            daily stand-ups et revues de sprint.
                         </p>
                         <div class="timeline-skills">
-                            <span class="tag tag-eco">Lorem</span>
-                            <span class="tag tag-culture">Ipsum</span>
-                            <span class="tag tag-sport">Dolor</span>
+                            <span class="tag tag-sport">Tests E2E</span>
+                            <span class="tag tag-eco">Playwright</span>
+                            <span class="tag tag-sciences">Cypress</span>
+                            <span class="tag tag-politique">Agile</span>
                         </div>
                     </div>
                 </div>
@@ -480,66 +538,61 @@
         </div>
     </section>
 
-    <!-- ===================== CONTACT ===================== -->
     <section id="contact" class="section">
-        <div class="container contact-grid">
-            <div class="contact-intro">
-                <span class="eyebrow">Restons en contact</span>
-                <h2>Me contacter</h2>
-                <p>
-                    Une question, une opportunité de stage ou simplement envie d'échanger
-                    sur un projet ? N'hésitez pas à m'écrire.
-                </p>
-                <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/quentin-lang-81674936a/" target="_blank" rel="noopener">
-                        <i class="devicon-linkedin-plain"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/Straixes" target="_blank" rel="noopener">
-                        <i class="devicon-github-original-wordmark"></i> GitHub
-                    </a>
-                    <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/langq" target="_blank" rel="noopener">
-                        <i class="devicon-gitlab-plain-wordmark colored"></i> GitLab — UGA
-                    </a>
-                    <a href="https://www.instagram.com/_quentin.lang_/" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-instagram"></i> Instagram
-                    </a>
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Restons en contact</span>
+                    <h2>Me contacter</h2>
                 </div>
+                <p class="section-note">Une question, une opportunité de stage ou simplement envie d'échanger ?</p>
             </div>
-
-            <form class="contact-form">
-                <div class="form-row">
+            <div class="contact-links-grid">
+                <a href="mailto:quentinlang38@gmail.com" class="contact-link-card">
+                    <i class="fas fa-envelope"></i>
                     <div>
-                        <label for="nom">Nom</label>
-                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        <span class="contact-link-label">Email personnel</span>
+                        <span class="contact-link-value">quentinlang38@gmail.com</span>
                     </div>
+                </a>
+                <a href="mailto:quentin.lang@etu.univ-grenoble-alpes.fr" class="contact-link-card">
+                    <i class="fas fa-graduation-cap"></i>
                     <div>
-                        <label for="prenom">Prénom</label>
-                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                        <span class="contact-link-label">Email universitaire</span>
+                        <span class="contact-link-value">quentin.lang@etu.univ-grenoble-alpes.fr</span>
                     </div>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Votre message..."></textarea>
-                </div>
-                <button id="btn-send" type="submit" class="btn btn-primary">
-                    Envoyer <i class="fas fa-paper-plane"></i>
-                </button>
-            </form>
+                </a>
+                <a href="https://www.linkedin.com/in/quentin-lang-81674936a/" target="_blank" rel="noopener" class="contact-link-card">
+                    <i class="devicon-linkedin-plain"></i>
+                    <div>
+                        <span class="contact-link-label">LinkedIn</span>
+                        <span class="contact-link-value">quentin-lang-81674936a</span>
+                    </div>
+                </a>
+                <a href="https://github.com/Straixes" target="_blank" rel="noopener" class="contact-link-card">
+                    <i class="devicon-github-original-wordmark"></i>
+                    <div>
+                        <span class="contact-link-label">GitHub</span>
+                        <span class="contact-link-value">Straixes</span>
+                    </div>
+                </a>
+                <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/langq" target="_blank" rel="noopener" class="contact-link-card">
+                    <i class="devicon-gitlab-plain-wordmark"></i>
+                    <div>
+                        <span class="contact-link-label">GitLab — UGA</span>
+                        <span class="contact-link-value">langq</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- ===================== FOOTER ===================== -->
     <footer class="site-footer">
         <div class="container">
             <span class="stamp-mini"><span class="dot"></span> &copy; Lang Quentin — 2025/2026</span>
             <span>Portfolio réalisé dans le cadre de la formation BUT Informatique — IUT2 Grenoble</span>
         </div>
     </footer>
-    <!-- ===================== CAROUSEL SCRIPT ===================== -->
     <script>
         (function(){
             const carousel = document.getElementById('projects-carousel');

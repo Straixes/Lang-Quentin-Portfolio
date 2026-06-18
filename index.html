@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+        if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
     <title>Quentin Lang — Étudiant BUT Informatique</title>
     <style>
         /* ---- Carte Aide&Vous dans le carousel ---- */
@@ -67,7 +72,7 @@
                     loader.style.visibility = 'hidden';
                     loader.style.pointerEvents = 'none';
                     setTimeout(() => loader.remove(), 600);
-                }, 800);
+                }, 2000);
             }
         });
     </script>
@@ -86,6 +91,7 @@
                 <li><a href="#parcours">Parcours</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle" title="Changer de thème"><i class="fas fa-moon"></i></button>
         </nav>
     </header>
 
@@ -668,5 +674,6 @@
         })();
 
     </script>
+    <script src="js/premium-features.js"></script>
 </body>
 </html>

@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projetIa.css">
     <link rel="stylesheet" href="css/projetAideVous.css">
+
+    <script>
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+        if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
     <title>Aide&amp;Vous — Coffre-fort numérique intelligent</title>
 </head>
-<body>
+<body class="page-enter">
 
     <header class="site-header">
         <nav class="nav">
@@ -26,6 +31,7 @@
                 <li><a href="#archi">Architecture</a></li>
                 <li><a href="#results">Bilan</a></li>
             </ul>
+            <button id="theme-toggle" title="Changer de thème"><i class="fas fa-moon"></i></button>
         </nav>
     </header>
 
@@ -123,7 +129,7 @@
             </div>
 
             <div class="av-features-grid">
-                <div class="av-feature-card" style="border-color: #3182ce; background: #ebf8ff;">
+                <div class="av-feature-card av-box-accent">
                     <div class="av-feature-icon av-feat-blue"><i class="fas fa-brain"></i></div>
                     <div class="av-feature-body">
                         <h3>Analyse de documents</h3>
@@ -399,5 +405,6 @@
             counters.forEach(counter => observer.observe(counter));
         });
     </script>
+    <script src="js/premium-features.js"></script>
 </body>
 </html>

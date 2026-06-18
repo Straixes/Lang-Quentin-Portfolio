@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projetIa.css">
+
+    <script>
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+        if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
     <title>Classification automatique de dépêches — Projet</title>
 </head>
-<body>
+<body class="page-enter">
 
     <!-- ===================== NAVBAR ===================== -->
     <header class="site-header">
@@ -21,10 +26,12 @@
             </a>
             <ul>
                 <li><a href="#overview">Aperçu</a></li>
-                <li><a href="#process">Processus</a></li>
-                <li><a href="#results">Résultats</a></li>
+                <li><a href="#contexte">Contexte</a></li>
+                <li><a href="#demo">Démo</a></li>
                 <li><a href="#tech">Technique</a></li>
+                <li><a href="#bilan">Bilan</a></li>
             </ul>
+            <button id="theme-toggle" title="Changer de thème"><i class="fas fa-moon"></i></button>
         </nav>
     </header>
 
@@ -281,5 +288,6 @@
             counters.forEach(counter => observer.observe(counter));
         });
     </script>
+    <script src="js/premium-features.js"></script>
 </body>
 </html>

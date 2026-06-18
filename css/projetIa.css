@@ -80,8 +80,8 @@
 }
 
 .proj-quicknav a:hover{
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--card-dark-bg);
+  color: var(--text-light);
   transform: translateY(-2px);
 }
 
@@ -169,7 +169,7 @@
 .category-card:hover h4,
 .category-card:hover .category-weight,
 .category-card:hover .category-icon{
-  color: var(--paper);
+  color: var(--text-light);
 }
 
 .cat-sciences{ color: var(--cat-sciences); }
@@ -274,8 +274,8 @@
 }
 
 .tech-details{
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--card-dark-bg);
+  color: var(--text-light);
   border-radius: 18px;
   padding: 3rem;
 }
@@ -289,7 +289,7 @@
 }
 
 .tech-details > .section-head h2{
-  color: var(--paper);
+  color: var(--text-light);
 }
 
 .tech-grid{
@@ -306,7 +306,7 @@
 }
 
 .tech-item h4{
-  color: var(--paper);
+  color: var(--text-light);
   font-family:'JetBrains Mono', monospace;
   font-size:0.8rem;
   letter-spacing:0.1em;

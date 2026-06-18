@@ -35,7 +35,7 @@
   position:absolute;
   top: -12px; left: 1.6rem;
   background: var(--stamp-red);
-  color: var(--paper);
+  color: var(--text-light);
   font-family:'JetBrains Mono', monospace;
   font-size: 0.68rem;
   font-weight: 700;
@@ -74,8 +74,8 @@
 
 /* ---------- Rôle individuel — encart mis en avant ---------- */
 .role-card{
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--card-dark-bg);
+  color: var(--text-light);
   border-radius: var(--radius-card);
   padding: 2.2rem 2.4rem;
   display:grid;
@@ -99,7 +99,7 @@
 }
 
 .role-card h3{
-  color: var(--paper);
+  color: var(--text-light);
   margin-bottom: 0.8rem;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .gallery-figure:hover{
-  transform: scale(1.8);
+  transform: scale(1.2);
   z-index: 100;
   box-shadow: 0 30px 60px rgba(0,0,0,0.3);
 }

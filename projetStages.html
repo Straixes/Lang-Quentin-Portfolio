@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projetIa.css">
     <link rel="stylesheet" href="css/projetStages.css">
+
+    <script>
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+        if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
     <title>Mon carnet de suivi de stage — Projet</title>
 </head>
-<body>
+<body class="page-enter">
 
     <!-- ===================== NAVBAR ===================== -->
     <header class="site-header">
@@ -27,6 +32,7 @@
                 <li><a href="#tech">Technique</a></li>
                 <li><a href="#results">Bilan</a></li>
             </ul>
+            <button id="theme-toggle" title="Changer de thème"><i class="fas fa-moon"></i></button>
         </nav>
     </header>
 
@@ -298,5 +304,6 @@
         </div>
     </footer>
 
+    <script src="js/premium-features.js"></script>
 </body>
 </html>

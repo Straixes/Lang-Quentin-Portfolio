@@ -1105,3 +1105,14 @@ p{ color: var(--ink-soft); }
   0% { width: 0%; }
   100% { width: 100%; }
 }
+
+/* =========================================================
+   CUSTOM CURSOR (FOUNTAIN PEN)
+   ========================================================= */
+body {
+  cursor: url("../img/cursor-default.svg") 1 1, auto;
+}
+
+a, button, input, textarea, .carousel-arrow, .carousel-dot, .kanban-card, .category-card, .gallery-figure, .cursor-pointer {
+  cursor: url("../img/cursor-pointer.svg") 1 1, pointer !important;
+}

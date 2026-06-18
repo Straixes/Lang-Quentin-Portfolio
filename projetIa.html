@@ -209,19 +209,19 @@
 
             <div class="results-stats">
                 <div class="stat-item">
-                    <div class="stat-number">85%</div>
+                    <div class="stat-number"><span class="count-up" data-target="85">0</span>%</div>
                     <div class="stat-label">Précision globale</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">500+</div>
+                    <div class="stat-number"><span class="count-up" data-target="500">0</span>+</div>
                     <div class="stat-label">Dépêches testées</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">150+</div>
+                    <div class="stat-number"><span class="count-up" data-target="150">0</span>+</div>
                     <div class="stat-label">Mots-clés utilisés</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">5</div>
+                    <div class="stat-number"><span class="count-up" data-target="5">0</span></div>
                     <div class="stat-label">Catégories</div>
                 </div>
             </div>
@@ -251,5 +251,35 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.count-up');
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        const target = +entry.target.getAttribute('data-target');
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        
+                        let current = 0;
+                        const updateCounter = () => {
+                            current += step;
+                            if(current < target) {
+                                entry.target.innerText = Math.ceil(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                entry.target.innerText = target;
+                            }
+                        };
+                        updateCounter();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            counters.forEach(counter => observer.observe(counter));
+        });
+    </script>
 </body>
 </html>

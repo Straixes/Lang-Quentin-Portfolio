@@ -76,7 +76,7 @@ html{ scroll-behavior:smooth; }
 body{
   background-color: var(--paper);
   color: var(--ink);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   font-size: 16px;
   line-height: 1.65;
   background-image:
@@ -95,7 +95,7 @@ a{ color: inherit; }
 
 /* ---------- Typography scale ---------- */
 h1, h2, h3, h4{
-  font-family: 'Spectral', serif;
+  font-family: 'Syne', sans-serif;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink);
@@ -1159,15 +1159,13 @@ a, button, input, textarea, .carousel-arrow, .carousel-dot, .kanban-card, .categ
    PAGE TRANSITIONS
    ========================================================= */
 body {
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 body.page-leave {
   opacity: 0;
-  transform: translateY(10px);
 }
 
 body.page-enter {
   opacity: 0;
-  transform: translateY(-10px);
 }

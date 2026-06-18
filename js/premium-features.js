@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.body.classList.remove('page-enter');
         document.body.style.opacity = '1';
-        document.body.style.transform = 'translateY(0)';
     }, 10); // Small delay to ensure CSS transition triggers
 
     const links = document.querySelectorAll('a[href]');

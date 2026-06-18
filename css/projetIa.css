@@ -211,7 +211,7 @@
 }
 
 .step-number{
-  font-family:'Spectral', serif;
+  font-family:'Syne', sans-serif;
   font-size: 2.4rem;
   font-weight:600;
   color: var(--stamp-red);
@@ -359,7 +359,7 @@
 }
 
 .stat-number{
-  font-family:'Spectral', serif;
+  font-family:'Syne', sans-serif;
   font-size: 2.6rem;
   font-weight:700;
   color: var(--stamp-red);

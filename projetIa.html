@@ -33,13 +33,11 @@
         <div class="container">
             <a href="index.html" class="proj-back"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
             <div class="proj-meta">
-                <span class="proj-id">Dossier 01 / Texte &amp; Lexiques</span>
+                <span class="proj-id">Dossier 02 / Texte &amp; Lexiques</span>
             </div>
             <h1>Classification automatique de dépêches</h1>
             <p class="proj-lede">
-                Un programme qui lit de courtes dépêches journalistiques et les range, sans intervention
-                humaine, dans l'une de cinq catégories : Sciences, Culture, Économie, Politique ou Sport —
-                en s'appuyant sur des lexiques de mots-clés pondérés.
+                C'est un programme Java que nous avons développé pour lire automatiquement de courts articles de presse et deviner de quoi ils parlent (Sciences, Culture, Économie, Politique ou Sport). Pour y arriver, le programme se base sur un système de mots-clés que nous lui avons appris à reconnaître.
             </p>
             <div class="proj-quicknav">
                 <a href="#overview"><i class="fas fa-eye"></i> Aperçu</a>
@@ -64,23 +62,20 @@
             <div class="overview-grid">
                 <div class="overview-card">
                     <div class="icon"><i class="fas fa-bullseye"></i></div>
-                    <h3>Objectif</h3>
-                    <p>Créer un programme capable d'analyser de courtes dépêches journalistiques et de les classer
-                    dans l'une des cinq catégories : Sciences, Culture, Économie, Politique, ou Sport.</p>
+                    <h3>Le but du jeu</h3>
+                    <p>Faire en sorte qu'un ordinateur lise un texte court et comprenne tout seul s'il s'agit d'un article de sport, d'économie, de politique, de science ou de culture.</p>
                 </div>
 
                 <div class="overview-card">
                     <div class="icon"><i class="fas fa-brain"></i></div>
-                    <h3>Principe</h3>
-                    <p>Un système de lexiques avec des mots-clés pondérés pour chaque catégorie. Chaque mot
-                    possède un poids de 1 à 3 selon son importance, généré par l'algorithme à partir de
-                    dépêches déjà connues.</p>
+                    <h3>Comment ça marche ?</h3>
+                    <p>Nous utilisons des listes de mots-clés. Chaque mot a un "poids" (une note de 1 à 3) selon son importance. L'ordinateur calcule ensuite le score total du texte pour deviner la bonne catégorie.</p>
                 </div>
 
                 <div class="overview-card">
                     <div class="icon"><i class="fas fa-users"></i></div>
-                    <h3>Équipe</h3>
-                    <p>Projet réalisé en binôme avec une présentation orale finale et un rapport écrit.</p>
+                    <h3>Le cadre</h3>
+                    <p>C'est un projet que j'ai mené en binôme. Nous avons dû rendre un rapport écrit et présenter notre code à l'oral devant un jury.</p>
                 </div>
             </div>
 
@@ -134,74 +129,39 @@
                 <div class="process-step">
                     <div class="step-number">01<span class="slash">/04</span></div>
                     <div class="step-content">
-                        <h3>Création manuelle des lexiques</h3>
-                        <p>Analyse manuelle d'un ensemble de dépêches d'exemple pour identifier les mots-clés
-                        représentatifs de chaque catégorie. Attribution d'un poids (1 à 3) selon l'importance
-                        discriminante de chaque terme — afin de comparer ensuite ces résultats avec le lexique
-                        généré automatiquement par l'algorithme.</p>
+                        <h3>Création manuelle des listes de mots</h3>
+                        <p>Au début, nous avons lu nous-mêmes plusieurs articles pour repérer les mots qui revenaient souvent dans chaque thème. On leur a donné une note de 1 à 3. Le but était de voir si notre programme ferait mieux que nous par la suite.</p>
                     </div>
                 </div>
 
                 <div class="process-step">
                     <div class="step-number">02<span class="slash">/04</span></div>
                     <div class="step-content">
-                        <h3>Développement des fonctions</h3>
-                        <p>Implémentation des algorithmes de génération des lexiques, calcul des scores par
-                        catégorie, et génération automatique des fichiers de résultats avec les classifications.</p>
+                        <h3>L'écriture du code</h3>
+                        <p>C'est la partie la plus importante : nous avons codé l'algorithme en Java pour qu'il apprenne tout seul ses mots-clés, calcule les scores, et range automatiquement chaque article dans le bon dossier.</p>
                     </div>
                 </div>
 
                 <div class="process-step">
                     <div class="step-number">03<span class="slash">/04</span></div>
                     <div class="step-content">
-                        <h3>Tests et validation</h3>
-                        <p>Évaluation de la précision du programme sur un jeu de données de test. Mesure du
-                        pourcentage de bonnes classifications pour permettre un ajustement éventuel des paramètres.</p>
+                        <h3>Est-ce que ça marche ?</h3>
+                        <p>Pour le savoir, nous avons fait passer un "examen" à notre programme sur des centaines d'articles qu'il n'avait jamais vus. En regardant son pourcentage de réussite, on pouvait ajuster le code pour l'améliorer.</p>
                     </div>
                 </div>
 
                 <div class="process-step">
                     <div class="step-number">04<span class="slash">/04</span></div>
                     <div class="step-content">
-                        <h3>Documentation et présentation</h3>
-                        <p>Rédaction d'un rapport technique et préparation d'une présentation orale pour expliquer
-                        la méthodologie et faire une démonstration technique.</p>
+                        <h3>Défendre notre travail</h3>
+                        <p>À la fin, nous avons rédigé un rapport pour expliquer comment nous avions construit le code, et nous l'avons présenté à l'oral pour montrer ce qu'il savait faire en direct.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===================== GALERIE ===================== -->
-    <section class="section">
-        <div class="container">
-            <div class="section-head">
-                <div>
-                    <span class="eyebrow">Pièces du dossier</span>
-                    <h2>Aperçus visuels</h2>
-                </div>
-                <p class="section-note">Captures à venir — interface, graphiques et structure des lexiques.</p>
-            </div>
-            <div class="image-gallery">
-                <div class="image-placeholder">
-                    <i class="fas fa-file-code"></i>
-                    Interface du programme
-                </div>
-                <div class="image-placeholder">
-                    <i class="fas fa-chart-bar"></i>
-                    Graphiques de performance
-                </div>
-                <div class="image-placeholder">
-                    <i class="fas fa-database"></i>
-                    Structure des lexiques
-                </div>
-                <div class="image-placeholder">
-                    <i class="fas fa-newspaper"></i>
-                    Exemples de dépêches
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- ===================== TECH ===================== -->
     <section id="tech" class="section">
@@ -215,27 +175,23 @@
                 </div>
                 <div class="tech-grid">
                     <div class="tech-item">
-                        <h4><i class="fas fa-code"></i> Algorithme</h4>
-                        <p>Calcul de scores pondérés pour chaque catégorie, basé sur la présence et la
-                        fréquence des mots-clés dans les dépêches.</p>
+                        <h4><i class="fas fa-code"></i> L'algorithme</h4>
+                        <p>Il parcourt le texte, repère les mots qu'il connaît et calcule un score total pour savoir de quoi parle l'article.</p>
                     </div>
 
                     <div class="tech-item">
-                        <h4><i class="fas fa-weight-hanging"></i> Pondération</h4>
-                        <p>Système de poids de 1 à 3 pour chaque terme du lexique, reflétant son pouvoir
-                        discriminant pour la catégorie.</p>
+                        <h4><i class="fas fa-weight-hanging"></i> Le système de notes</h4>
+                        <p>Tous les mots ne se valent pas. Par exemple, le mot "ballon" donne plus de points pour la catégorie Sport que le mot "joueur".</p>
                     </div>
 
                     <div class="tech-item">
-                        <h4><i class="fas fa-file-alt"></i> Format de sortie</h4>
-                        <p>Génération automatique de fichiers de résultats indiquant, pour chaque dépêche,
-                        la catégorie attribuée et le score de confiance.</p>
+                        <h4><i class="fas fa-file-alt"></i> Le résultat</h4>
+                        <p>À la fin, le programme crée un fichier de résumé clair. Pour chaque article, il nous dit dans quelle catégorie il l'a rangé et s'il en est sûr ou pas.</p>
                     </div>
 
                     <div class="tech-item">
-                        <h4><i class="fas fa-search"></i> Validation</h4>
-                        <p>Test sur un corpus indépendant pour mesurer la précision et identifier les axes
-                        d'amélioration du classifieur.</p>
+                        <h4><i class="fas fa-search"></i> La vérification</h4>
+                        <p>On donne au programme des textes pièges pour voir où il se trompe, ce qui nous permet de corriger ses erreurs et de le rendre plus intelligent.</p>
                     </div>
                 </div>
             </div>
@@ -269,6 +225,21 @@
                     <div class="stat-label">Catégories</div>
                 </div>
             </div>
+
+            <ul class="bilan-list">
+                <li>
+                    <i class="fas fa-brain"></i>
+                    <span><strong>Premiers pas en IA et Algorithmique :</strong> Ce projet m'a permis de comprendre concrètement comment on pouvait donner du sens à du texte brut et la logique mathématique derrière un système de pondération.</span>
+                </li>
+                <li>
+                    <i class="fas fa-code-branch"></i>
+                    <span><strong>Programmation Orientée Objet avancée :</strong> J'ai structuré le code Java de manière robuste pour séparer le chargement des données, le nettoyage du texte et le moteur de classification.</span>
+                </li>
+                <li>
+                    <i class="fas fa-user-check"></i>
+                    <span><strong>Mon rôle dans le binôme :</strong> Je me suis particulièrement concentré sur l'optimisation de l'algorithme de calcul des scores et sur le nettoyage minutieux des lexiques pour améliorer notre précision finale de 15%.</span>
+                </li>
+            </ul>
         </div>
     </section>
 

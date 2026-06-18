@@ -146,12 +146,15 @@
   border-radius: var(--radius-card);
   overflow:hidden;
   background: var(--paper);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease, z-index 0s;
+  position: relative;
+  z-index: 1;
 }
 
 .gallery-figure:hover{
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-pop);
+  transform: scale(1.8);
+  z-index: 100;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
 }
 
 .gallery-figure img{

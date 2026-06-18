@@ -374,3 +374,30 @@
   color: var(--ink-soft);
   text-transform:uppercase;
 }
+
+/* ---------- Bilan — points clés ---------- */
+.bilan-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap: 1rem;
+  max-width: 760px;
+  margin: 3rem auto 0;
+}
+
+.bilan-list li{
+  display:flex;
+  align-items:flex-start;
+  gap: 1rem;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+}
+
+.bilan-list li i{
+  color: var(--stamp-red);
+  font-size: 1.05rem;
+  margin-top: 0.15em;
+  flex-shrink:0;
+}

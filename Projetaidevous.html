@@ -31,24 +31,24 @@
 
     <section class="proj-header av-header">
         <div class="container">
-            <a href="index.html" class="proj-back"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                <a href="index.html" class="proj-back" style="margin-bottom: 0;"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
 
-            <div class="av-award-banner">
-                <i class="fas fa-trophy"></i>
-                <span>2<sup>e</sup> meilleur projet de promotion — SAE S3/S4</span>
+                <div class="av-award-banner" style="margin-bottom: 1.6rem;">
+                    <i class="fas fa-trophy"></i>
+                    <span>2<sup>e</sup> meilleur projet de promotion — SAE S3/S4</span>
+                </div>
             </div>
 
             <div class="proj-meta">
-                <span class="proj-id">Dossier 02 / SAE Intégrative</span>
+                <span class="proj-id">Dossier 01 / SAE Intégrative</span>
                 <span class="av-badge-team"><i class="fas fa-users"></i> Équipe de 7</span>
                 <span class="av-badge-duration"><i class="fas fa-calendar-alt"></i> Nov. 2025 – Jan. 2026</span>
             </div>
 
             <h1>Aide&amp;Vous</h1>
             <p class="proj-lede av-lede">
-                Le coffre-fort numérique intelligent au service des aidants. Une application web qui
-                centralise, numérise et sécurise l'organisation médicale : détection automatique du type de document, 
-                extraction intelligente des médicaments en Python, agenda partagé et gestion des droits.
+                Aide&amp;Vous est un coffre-fort numérique pensé pour simplifier le quotidien des aidants familiaux. C'est une application web qui permet de rassembler et d'organiser facilement les documents médicaux de leurs proches. Elle propose notamment une lecture automatique des ordonnances via un script Python, un agenda partagé et une gestion fine des accès.
             </p>
 
             <div class="proj-quicknav">
@@ -93,26 +93,20 @@
             <div class="overview-grid">
                 <div class="overview-card">
                     <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
-                    <h3>Problème</h3>
-                    <p>Les aidants jonglent avec des documents médicaux éparpillés, une charge mentale
-                    élevée et des informations inaccessibles lors des urgences. Ordonnances perdues,
-                    RDV oubliés, coordination impossible entre proches.</p>
+                    <h3>Le constat</h3>
+                    <p>Quand on s'occupe d'un proche, on se retrouve vite sous une montagne de papiers : ordonnances, résultats d'analyses, rappels... L'information est souvent éparpillée et difficile à partager avec les autres membres de la famille.</p>
                 </div>
 
                 <div class="overview-card av-card-featured">
                     <div class="icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Solution</h3>
-                    <p>Aide&amp;Vous centralise tout en un seul espace sécurisé : analyse automatisée par Python pour 
-                    catégoriser les documents et en extraire les médicaments, agenda partagé, cercle de soin
-                    avec gestion fine des droits et fiche d'urgence.</p>
+                    <h3>Notre solution</h3>
+                    <p>Nous avons créé un espace unique pour tout regrouper. On y dépose un document médical, et l'application le classe et lit les médicaments importants grâce à un script Python. On y trouve aussi un agenda commun et une fiche d'urgence.</p>
                 </div>
 
                 <div class="overview-card">
                     <div class="icon"><i class="fas fa-user-cog"></i></div>
                     <h3>Mon rôle</h3>
-                    <p>Membre du groupe de développement principal. Contribution sur le coffre-fort
-                    numérique, l'intégration du flux d'analyse Python, la gestion des droits et la rédaction
-                    des dossiers techniques des phases 1 à 3.</p>
+                    <p>J'ai travaillé avec l'équipe de développement sur le coffre-fort numérique, le lien avec le script d'analyse Python, la gestion des accès, et la rédaction de la documentation technique tout au long du projet.</p>
                 </div>
             </div>
         </div>
@@ -132,8 +126,8 @@
                 <div class="av-feature-card" style="border-color: #3182ce; background: #ebf8ff;">
                     <div class="av-feature-icon av-feat-blue"><i class="fas fa-brain"></i></div>
                     <div class="av-feature-body">
-                        <h3>Intelligence Documentaire & Extraction</h3>
-                        <p><strong>Cœur du projet :</strong> Le système détecte automatiquement le type de document soumis parmi une liste stricte (ordonnance, compte-rendu, analyse labo, certificat). L'extraction des données <strong>n'est pas partielle</strong> : l'algorithme Python identifie et extrait l'intégralité des médicaments détectés de manière fiable.</p>
+                        <h3>Analyse de documents</h3>
+                        <p><strong>La fonctionnalité phare :</strong> Quand on ajoute un document, le système devine de quoi il s'agit. S'il s'agit d'une ordonnance, notre script Python se charge de lire le texte et d'en extraire le nom des médicaments pour les enregistrer automatiquement et sans erreur.</p>
                         <div class="av-feature-tags">
                             <span class="tag tag-sciences">Python</span>
                             <span class="tag tag-politique">Traitement Image</span>
@@ -196,8 +190,8 @@
                 <div class="process-step">
                     <div class="step-number">01<span class="slash">/03</span></div>
                     <div class="step-content">
-                        <h3>Cadrage &amp; architecture</h3>
-                        <p>Définition des flux de données et modélisation de la base PostgreSQL. Étude de faisabilité technique pour la partie détection et analyse d'image, validation des maquettes UI et pitch du concept devant le jury.</p>
+                        <h3>Conception &amp; maquettes</h3>
+                        <p>Nous avons commencé par concevoir la base de données et réfléchir au fonctionnement global. Il a aussi fallu vérifier que notre idée d'analyse d'image en Python tenait la route, créer les maquettes et présenter le projet devant le jury.</p>
                         <div class="step-tags">
                             <span class="tag tag-eco">BPMN</span>
                             <span class="tag tag-sciences">Gantt</span>
@@ -208,8 +202,8 @@
                 <div class="process-step">
                     <div class="step-number">02<span class="slash">/03</span></div>
                     <div class="step-content">
-                        <h3>Développement des algorithmes d'analyse</h3>
-                        <p>Conception du script Python pour le traitement des scans. Mise en place de la logique de classification (identification du type de document médical) et de l'algorithme d'extraction complète des médicaments.</p>
+                        <h3>Développement du script d'analyse</h3>
+                        <p>Nous nous sommes ensuite concentrés sur le code Python. L'objectif était de prendre une image, de l'analyser, de deviner le type de document médical, et d'isoler avec précision les traitements prescrits.</p>
                         <div class="step-tags">
                             <span class="tag tag-sciences">Python</span>
                             <span class="tag tag-politique">Traitement</span>
@@ -220,8 +214,8 @@
                 <div class="process-step">
                     <div class="step-number">03<span class="slash">/03</span></div>
                     <div class="step-content">
-                        <h3>Intégration &amp; tests utilisateurs</h3>
-                        <p>Développement des modules web (PHP/JS) et liaison avec l'algorithme Python. Tests utilisateurs en méthode "Think Aloud" pour valider l'ergonomie, suivis du déploiement final sur le serveur de l'IUT.</p>
+                        <h3>Intégration &amp; tests</h3>
+                        <p>Enfin, nous avons créé le site web en PHP/JS et l'avons connecté au script Python. Nous avons fait tester l'application à des utilisateurs pour voir s'ils s'y retrouvaient facilement, avant de tout mettre en ligne.</p>
                         <div class="step-tags">
                             <span class="tag tag-politique">Git</span>
                             <span class="tag tag-culture">Déploiement</span>
@@ -244,26 +238,12 @@
             
             <div class="image-gallery">
                 <figure class="gallery-figure">
-                    <div class="image-placeholder" style="aspect-ratio: 4/3;">
-                        <i class="fas fa-desktop"></i>
-                        <span>image Dashboard</span>
-                    </div>
+                    <img src="img/aideVous/dashboard.png" alt="Tableau de bord de l'aidant">
                     <figcaption>Tableau de bord de l'aidant</figcaption>
                 </figure>
                 
                 <figure class="gallery-figure">
-                    <div class="image-placeholder" style="aspect-ratio: 4/3;">
-                        <i class="fas fa-file-prescription"></i>
-                        <span>image Illustration algo</span>
-                    </div>
-                    <figcaption>Détection et extraction d'une ordonnance</figcaption>
-                </figure>
-                
-                <figure class="gallery-figure">
-                    <div class="image-placeholder" style="aspect-ratio: 4/3;">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span>image Agenda</span>
-                    </div>
+                    <img src="img/aideVous/agenda.png" alt="Vue de l'agenda partagé">
                     <figcaption>Vue de l'agenda partagé</figcaption>
                 </figure>
             </div>
@@ -324,8 +304,8 @@
 
             <div class="av-stack-grid">
                 <div class="av-stack-card">
-                    <h4><i class="fas fa-brain"></i> Traitement d'image & Analyse</h4>
-                    <p><strong>Python</strong> gère l'intégralité du pipeline intelligent : nettoyage des scans, détection de la nature du document médical et extraction précise des médicaments et données clés.</p>
+                    <h4><i class="fas fa-brain"></i> Traitement des documents</h4>
+                    <p>Nous utilisons <strong>Python</strong> pour lire et analyser les fichiers envoyés. Le script nettoie l'image, devine de quel type de document il s'agit, et en tire les informations utiles comme le nom des médicaments.</p>
                 </div>
                 <div class="av-stack-card">
                     <h4><i class="fas fa-server"></i> Backend Web</h4>
@@ -347,8 +327,8 @@
                 </div>
                 <div class="av-award-text">
                     <span class="eyebrow">Reconnaissance</span>
-                    <h2>2<sup>e</sup> meilleur projet de promotion</h2>
-                    <p>Sur l'ensemble des groupes de la SAE, Aide&amp;Vous a été distingué par le jury comme le deuxième meilleur projet de la promotion — une reconnaissance qui valide la robustesse de notre architecture, la précision de nos algorithmes d'extraction en Python et notre efficacité en équipe sur un projet complexe.</p>
+                    <h2>2<sup>e</sup> meilleur projet de la promotion</h2>
+                    <p>À la fin du semestre, le jury a classé notre travail en deuxième position parmi tous les groupes. C'était une belle récompense pour les efforts que nous avons mis dans le code Python et pour la façon dont on a réussi à s'organiser à 7 sur un projet aussi ambitieux.</p>
                 </div>
             </div>
 
@@ -363,13 +343,13 @@
                 <li>
                     <i class="fas fa-check-circle"></i>
                     <div>
-                        <strong>Une extraction fonctionnelle</strong> — la classification automatique du type de document et l'extraction complète des médicaments fonctionnent de bout en bout grâce à notre implémentation en Python.
+                        <strong>L'analyse Python a fait ses preuves</strong> — arriver à lire une ordonnance et en extraire les bons médicaments n'était pas gagné d'avance, mais notre script a tenu le coup lors de la démonstration finale.
                     </div>
                 </li>
                 <li>
                     <i class="fas fa-check-circle"></i>
                     <div>
-                        <strong>Sécurité et performance</strong> — requêtes SQL préparées, architecture séparée sur deux serveurs et gestion stricte des droits d'accès.
+                        <strong>Un socle technique solide</strong> — nous avons fait attention à sécuriser nos requêtes SQL, à bien séparer nos serveurs et à gérer correctement les accès à l'application.
                     </div>
                 </li>
                 <li>

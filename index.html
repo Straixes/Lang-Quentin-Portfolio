@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,10 +17,12 @@
         .av-media-placeholder {
             background: linear-gradient(135deg, #0b1220 0%, #1a2a4e 100%);
         }
+
         .av-hero-icon {
             font-size: 4rem;
             color: #5aa8ff;
         }
+
         .av-card-award-ribbon {
             position: absolute;
             bottom: 1.1rem;
@@ -34,14 +39,38 @@
             display: inline-flex;
             align-items: center;
             gap: 0.45em;
-            box-shadow: 0 4px 14px -4px rgba(232,76,48,0.55);
+            box-shadow: 0 4px 14px -4px rgba(232, 76, 48, 0.55);
         }
+
         .av-card-award-ribbon sup {
             font-size: 0.7em;
         }
     </style>
 </head>
+
 <body>
+
+    <!-- ===================== LOADER ===================== -->
+    <div id="site-loader" class="site-loader">
+        <div class="loader-content">
+            <div class="loader-icon"><i class="fas fa-terminal"></i></div>
+            <div class="loader-text">Chargement du dossier secret...</div>
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('site-loader');
+            if(loader){
+                setTimeout(() => {
+                    loader.style.opacity = '0';
+                    loader.style.visibility = 'hidden';
+                    loader.style.pointerEvents = 'none';
+                    setTimeout(() => loader.remove(), 600);
+                }, 800);
+            }
+        });
+    </script>
 
     <header class="site-header">
         <nav class="nav">
@@ -65,14 +94,13 @@
             <div class="hero-text">
                 <div class="hero-eyebrow">
                     <span class="blink"></span>
-                    Disponible pour stage / alternance — Grenoble
+                    Disponible pour alternance — Grenoble
                 </div>
                 <h1>Bonjour, je suis <span class="highlight">Quentin Lang</span>.</h1>
                 <p class="hero-lede">
                     Étudiant en 2<sup>e</sup> année de BUT Informatique à l'IUT2 de Grenoble.
-                    Je conçois des projets qui vont de l'algorithme de classification
-                    au site qui les présente — avec un goût particulier pour le code propre
-                    et les interfaces qui racontent quelque chose.
+                    J'aime toucher à tout : développer des algorithmes, des sites web, et faire en sorte que l'interface
+                    finale soit agréable à utiliser et visuellement réussie.
                 </p>
                 <div class="hero-actions">
                     <a href="#projets" class="btn btn-primary"><i class="fas fa-folder-open"></i> Voir mes projets</a>
@@ -107,19 +135,19 @@
             <div class="apropos-grid">
                 <div class="apropos-text">
                     <p>
-                        Je me destine à des métiers du développement full-stack ou de chef de projet — des rôles
-                        où la technique et la coordination se rejoignent. J'aime autant écrire du code
-                        propre que comprendre comment un projet s'organise et avance.
+                        Plus tard, j'aimerais être développeur full-stack ou chef de projet. J'aime l'idée de mélanger
+                        la technique pure avec l'organisation humaine. Écrire du code propre me plaît tout autant que de
+                        voir un projet prendre forme étape par étape.
                     </p>
                     <p>
-                        En dehors de l'écran, le tennis occupe une bonne partie de mon temps — en
-                        compétition de préférence. J'y retrouve la même logique qu'en informatique :
-                        analyser, s'adapter, progresser. Les jeux vidéo et la curiosité permanente pour
-                        les nouvelles technos complètent le tableau.
+                        En dehors de l'informatique, je passe beaucoup de temps sur les courts de tennis, souvent en
+                        compétition. Bizarrement, j'y retrouve un peu la même logique que devant un écran : il faut
+                        analyser la situation, trouver des solutions et toujours chercher à s'améliorer. Sinon, les jeux
+                        vidéo et les nouvelles technos occupent le reste de mon temps libre.
                     </p>
                     <p>
-                        Ce portfolio rassemble mes projets, mon parcours et mes compétences. Il est lui-même
-                        un projet — Imaginé et codé avec <strong>l'assistance</strong> d'outil d'ia.
+                        Ce portfolio vous présente ce que j'ai pu réaliser jusqu'ici. Je l'ai d'ailleurs codé moi-même,
+                        en m'aidant d'outils d'IA pour peaufiner le résultat.
                     </p>
                 </div>
 
@@ -203,7 +231,8 @@
                     </div>
 
                     <div class="skills-group">
-                        <h3 class="skills-group-title"><span class="tag tag-politique">Frameworks &amp; back-end</span></h3>
+                        <h3 class="skills-group-title"><span class="tag tag-politique">Frameworks &amp; back-end</span>
+                        </h3>
                         <div class="skills-grid">
                             <div class="skill-card">
                                 <i class="fab fa-symfony"></i>
@@ -269,7 +298,8 @@
                     <span class="eyebrow">Sur le bureau</span>
                     <h2>Outils du quotidien</h2>
                 </div>
-                <p class="section-note">L'environnement et la méthode plutôt que la techno — ce qui ne change pas d'un projet à l'autre.</p>
+                <p class="section-note">L'environnement et la méthode plutôt que la techno — ce qui ne change pas d'un
+                    projet à l'autre.</p>
             </div>
 
             <div class="outils-grid">
@@ -283,14 +313,16 @@
                             <i class="fas fa-code"></i>
                             <div>
                                 <span class="outils-name">Visual Studio Code</span>
-                                <span class="outils-desc">Éditeur polyvalent pour le web, les scripts et l'exploration rapide</span>
+                                <span class="outils-desc">Éditeur polyvalent pour le web, les scripts et l'exploration
+                                    rapide</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-cubes"></i>
                             <div>
                                 <span class="outils-name">Suite JetBrains</span>
-                                <span class="outils-desc">IntelliJ IDEA pour Java, PhpStorm pour Symfony — environnements dédiés par langage</span>
+                                <span class="outils-desc">IntelliJ IDEA pour Java, PhpStorm pour Symfony —
+                                    environnements dédiés par langage</span>
                             </div>
                         </li>
                         <li>
@@ -311,7 +343,8 @@
                             <i class="fab fa-linux"></i>
                             <div>
                                 <span class="outils-name">Linux</span>
-                                <span class="outils-desc">Environnement principal à l'IUT — terminal, scripts shell</span>
+                                <span class="outils-desc">Environnement principal à l'IUT — terminal, scripts
+                                    shell</span>
                             </div>
                         </li>
                     </ul>
@@ -324,7 +357,8 @@
                     <p class="outils-methode-text">
                         En projet scolaire, j'utilise une approche semi-agile avec un tableau Kanban
                         pour répartir et suivre les tâches. En stage, j'ai travaillé avec de vrais
-                        sprints agiles. Je m'appuie sur des outils comme <strong>Trello</strong> ou <strong>Notion</strong> pour structurer les tickets et la documentation.
+                        sprints agiles. Je m'appuie sur des outils comme <strong>Trello</strong> ou
+                        <strong>Notion</strong> pour structurer les tickets et la documentation.
                     </p>
 
                     <div class="kanban-board">
@@ -378,36 +412,16 @@
                         <article class="project-card-lg">
                             <div class="project-media-lg">
                                 <span class="ref">Dossier 01</span>
-                                <img src="img/Sans titre.jpg" alt="Aperçu du code du projet de classification">
-                            </div>
-                            <div class="project-body-lg">
-                                <h3>Classification automatique de dépêches</h3>
-                                <p>
-                                    Classification automatique de dépêches journalistiques dans cinq catégories via un algorithme de lexiques de mots-clés pondérés.
-                                </p>
-                                <div class="project-tags">
-                                    <span class="tag tag-sciences">Java</span>
-                                    <span class="tag tag-politique">Équipe de 2</span>
-                                    <span class="tag tag-eco">Algorithmique</span>
-                                </div>
-                                <a href="projetIa.html" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </article>
-
-                        <article class="project-card-lg">
-                            <div class="project-media-lg">
-                                <span class="ref">Dossier 02</span>
-                                <div class="media-placeholder av-media-placeholder">
-                                    <i class="fas fa-shield-alt av-hero-icon"></i>
-                                </div>
+                                <img src="img/aideVous/dashboard.png" alt="Interface du coffre-fort médical Aide&Vous">
                                 <div class="av-card-award-ribbon">
                                     <i class="fas fa-trophy"></i> 2<sup>e</sup> meilleur projet promo
                                 </div>
                             </div>
                             <div class="project-body-lg">
-                                <h3>Aide&amp;Vous — Intelligence Documentaire</h3>
+                                <h3>Aide&amp;Vous — Coffre-fort médical</h3>
                                 <p>
-                                    Coffre-fort numérique médical intégrant un moteur d'extraction intelligent en Python pour analyser et extraire les ordonnances par OCR.
+                                    Une application web pour centraliser les documents médicaux des aidants, intégrant
+                                    un script Python pour lire et extraire automatiquement le contenu des ordonnances.
                                 </p>
                                 <div class="project-tags">
                                     <span class="tag tag-sciences">Python</span>
@@ -415,19 +429,43 @@
                                     <span class="tag tag-eco">PostgreSQL</span>
                                     <span class="tag tag-culture">Équipe de 7</span>
                                 </div>
-                                <a href="Projetaidevous.html" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
+                                <a href="Projetaidevous.html" class="btn btn-ghost project-link">Ouvrir le dossier <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="project-card-lg">
+                            <div class="project-media-lg">
+                                <span class="ref">Dossier 02</span>
+                                <img src="img/Sans titre.jpg" alt="Aperçu du code du projet de classification">
+                            </div>
+                            <div class="project-body-lg">
+                                <h3>Classification automatique de dépêches</h3>
+                                <p>
+                                    Un programme Java capable de lire des articles de presse et de deviner
+                                    automatiquement leur thème principal grâce à un système de mots-clés pondérés.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag tag-sciences">Java</span>
+                                    <span class="tag tag-politique">Équipe de 2</span>
+                                    <span class="tag tag-eco">Algorithmique</span>
+                                </div>
+                                <a href="projetIa.html" class="btn btn-ghost project-link">Ouvrir le dossier <i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
 
                         <article class="project-card-lg">
                             <div class="project-media-lg">
                                 <span class="ref">Dossier 03</span>
-                                <img src="img/tableau-bord.png" alt="Tableau de bord de l'application de suivi de stage">
+                                <img src="img/tableau-bord.png"
+                                    alt="Tableau de bord de l'application de suivi de stage">
                             </div>
                             <div class="project-body-lg">
                                 <h3>Mon carnet de suivi de stage</h3>
                                 <p>
-                                    Refonte ergonomique d'une application Android de suivi de stage et implémentation d'une stratégie de tests End-to-End.
+                                    Refonte de l'interface d'une application de suivi de stage et mise en place de tests
+                                    automatisés pour s'assurer que tout fonctionne correctement.
                                 </p>
                                 <div class="project-tags">
                                     <span class="tag tag-politique">Symfony</span>
@@ -436,7 +474,8 @@
                                     <span class="tag tag-culture">Docker</span>
                                     <span class="tag tag-sport">Tests E2E</span>
                                 </div>
-                                <a href="projetStages.html" class="btn btn-ghost project-link">Ouvrir le dossier <i class="fas fa-arrow-right"></i></a>
+                                <a href="projetStages.html" class="btn btn-ghost project-link">Ouvrir le dossier <i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
 
@@ -471,9 +510,9 @@
                     <div>
                         <h3 class="timeline-title">BUT Informatique — IUT2 Grenoble</h3>
                         <p class="timeline-description">
-                            Formation spécialisée en développement logiciel, programmation orientée objet,
-                            bases de données et gestion de projets. Accent mis sur le développement web
-                            full-stack et les méthodologies modernes.
+                            Découverte et approfondissement du développement de logiciels et de sites web, gestion de
+                            bases de données et travail en équipe. On y apprend à coder proprement et à gérer un projet
+                            de A à Z.
                         </p>
                         <div class="timeline-skills">
                             <span class="tag tag-sciences">Java</span>
@@ -489,10 +528,9 @@
                     <div>
                         <h3 class="timeline-title">Stage — Aristid</h3>
                         <p class="timeline-description">
-                            Stage de 2<sup>e</sup> année de BUT au sein de la société Aristid, spécialisée
-                            dans la distribution et l'analyse de données commerciales. Mission centrée sur
-                            l'automatisation de tests End-to-End dans un environnement agile avec sprints,
-                            daily stand-ups et revues de sprint.
+                            Stage réalisé chez Aristid, une entreprise spécialisée dans la donnée commerciale. J'ai eu
+                            l'occasion de créer des tests automatisés et de découvrir le vrai travail en équipe façon
+                            "Agile" (avec des réunions quotidiennes et des objectifs par semaine).
                         </p>
                         <div class="timeline-skills">
                             <span class="tag tag-sport">Tests E2E</span>
@@ -508,8 +546,8 @@
                     <div>
                         <h3 class="timeline-title">Spécialités Maths / NSI / Physique</h3>
                         <p class="timeline-description">
-                            Renforcement des bases scientifiques et premiers projets de programmation,
-                            posant les fondations logiques utilisées aujourd'hui en BUT.
+                            C'est là que j'ai vraiment commencé à coder et à développer une logique scientifique qui
+                            m'aide beaucoup aujourd'hui dans mes études supérieures.
                         </p>
                         <div class="timeline-skills">
                             <span class="tag tag-sciences">Maths</span>
@@ -524,8 +562,8 @@
                     <div>
                         <h3 class="timeline-title">Première expérience en entreprise</h3>
                         <p class="timeline-description">
-                            Découverte du développement web en équipe et premiers pas avec des
-                            méthodologies de travail proches de l'agile.
+                            Ma toute première vraie expérience du monde de l'entreprise et du travail en équipe autour
+                            du développement web.
                         </p>
                         <div class="timeline-skills">
                             <span class="tag tag-sciences">HTML / CSS</span>
@@ -548,25 +586,25 @@
                 <p class="section-note">Une question, une opportunité de stage ou simplement envie d'échanger ?</p>
             </div>
             <div class="contact-links-grid">
-                <a href="mailto:quentinlang38@gmail.com" class="contact-link-card">
+                <a href="#" onclick="window.location.href='mailto:' + 'quentinlang38' + '@' + 'gmail.com'; return false;" class="contact-link-card">
                     <i class="fas fa-envelope"></i>
                     <div>
                         <span class="contact-link-label">Email personnel</span>
-                        <span class="contact-link-value">quentinlang38@gmail.com</span>
+                        <span class="contact-link-value">Cliquez pour afficher</span>
                     </div>
                 </a>
-                <a href="mailto:quentin.lang@etu.univ-grenoble-alpes.fr" class="contact-link-card">
+                <a href="#" onclick="window.location.href='mailto:' + 'quentin.lang' + '@' + 'etu.univ-grenoble-alpes.fr'; return false;" class="contact-link-card">
                     <i class="fas fa-graduation-cap"></i>
                     <div>
                         <span class="contact-link-label">Email universitaire</span>
-                        <span class="contact-link-value">quentin.lang@etu.univ-grenoble-alpes.fr</span>
+                        <span class="contact-link-value">Cliquez pour afficher</span>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/quentin-lang-81674936a/" target="_blank" rel="noopener" class="contact-link-card">
+                <a href="#" onclick="window.open('https://' + 'www.linkedin.com/in/' + 'quentin-lang-81674936a/', '_blank'); return false;" class="contact-link-card">
                     <i class="devicon-linkedin-plain"></i>
                     <div>
                         <span class="contact-link-label">LinkedIn</span>
-                        <span class="contact-link-value">quentin-lang-81674936a</span>
+                        <span class="contact-link-value">Accéder au profil</span>
                     </div>
                 </a>
                 <a href="https://github.com/Straixes" target="_blank" rel="noopener" class="contact-link-card">
@@ -576,7 +614,8 @@
                         <span class="contact-link-value">Straixes</span>
                     </div>
                 </a>
-                <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/langq" target="_blank" rel="noopener" class="contact-link-card">
+                <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/langq" target="_blank" rel="noopener"
+                    class="contact-link-card">
                     <i class="devicon-gitlab-plain-wordmark"></i>
                     <div>
                         <span class="contact-link-label">GitLab — UGA</span>
@@ -594,7 +633,7 @@
         </div>
     </footer>
     <script>
-        (function(){
+        (function () {
             const carousel = document.getElementById('projects-carousel');
             const track = carousel.querySelector('.carousel-track');
             const cards = Array.from(track.children);
@@ -605,12 +644,12 @@
             let index = 0;
             const total = cards.length;
 
-            function update(){
+            function update() {
                 track.style.transform = `translateX(-${index * 100}%)`;
                 dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
             }
 
-            function go(delta){
+            function go(delta) {
                 index = (index + delta + total) % total;
                 update();
             }
@@ -624,7 +663,8 @@
 
             update();
         })();
-    </script>
 
+    </script>
 </body>
+
 </html>
